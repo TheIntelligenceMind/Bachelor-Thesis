@@ -1,0 +1,32 @@
+%!TEX root = ../Thesis.tex
+\section*{Quellenverzeichnis}
+\addcontentsline{toc}{section}{Quellenverzeichnis}
+\fancyhead[R]{Quellenverzeichnis}
+
+\defbibheading{mono}{\subsection*{Monographien}}
+\defbibheading{mag}{\subsection*{Aufsätze in Sammelbänden und Zeitschriften}}
+\defbibheading{art}{\subsection*{Zeitungsartikel}}
+\defbibheading{web}{\subsection*{Internetquellen}}
+\defbibheading{leg}{\subsection*{Rechtsprechung}}
+\defbibheading{lex}{\subsection*{Lexika und Enzyklopädien}}
+\defbibheading{comp}{\subsection*{Unternehmensunterlagen/Gesprächsnotizen}}
+\defbibheading{noge}{\subsection*{Normen und Gesetze}}
+
+\setlength\bibitemsep{1.5\itemsep}
+\setlength{\bibhang}{2em}
+
+\renewcommand{\baselinestretch}{1.50}\normalsize
+
+\begingroup
+\sloppy
+
+\printbibliography[heading=mono,keyword=mono]
+\printbibliography[heading=mag,keyword=mag]
+\printbibliography[heading=web,keyword=web]
+\printbibliography[heading=lex,keyword=lex]
+%\printbibliography[heading=art,keyword=art]
+%\printbibliography[heading=leg,keyword=leg]
+\printbibliography[heading=comp,keyword=comp]
+\printbibliography[heading=noge,keyword=noge]
+
+\endgroup

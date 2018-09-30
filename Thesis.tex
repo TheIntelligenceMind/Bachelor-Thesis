@@ -1,0 +1,113 @@
+\input{config/Config}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Parameter - Hier auf die eigene Arbeit anpassen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\dokumententyp}{Bachelorthesis}
+\newcommand{\abgabedatum}{\today} 
+\newcommand{\ort}{Gütersloh} 
+\newcommand{\koorperationsunternehmen}{Bertelsmann SE \& Co. KGaA}
+\newcommand{\dokumententitel}{Arbeitsablaufoptimierung durch anwendungsfallorientierte Erweiterung der Benutzerschnittstelle für Vermögensauskünfte}
+\newcommand{\dokumentenautor}{Tim Hermbecker}
+\newcommand{\dokumentenautoradress}{Strengerstraße 20\\33330 Gütersloh}
+\newcommand{\dokumentenpruefer}{Prof. Dr. Carsten Weigand\\Dipl.-Math. Johannes Antweiler}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0},
+  pdftitle=\dokumententitel,
+  pdfauthor=\dokumentenautor
+} 
+
+\begin{document}
+
+% Römische Seitennummerierung
+\pagenumbering{Roman}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Titelseite
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapter/Titelseite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Draft-Einstellungen
+%%
+%% Für die finale Version auskommentieren!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead[L]{\color{red} Stand: \today~-~\currenttime}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Verzeichnisse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Sperrvermerk
+\include{chapter/Sperrvermerk}
+
+% Inhaltsverzeichnis
+\tableofcontents\newpage
+
+% Abkürzungsverzeichnis
+\printglossary[type=\acronymtype, style=mylist, title=Abkürzungsverzeichnis, toctitle=Abkürzungsverzeichnis]\newpage
+\setcounter{table}{0} % printglossary erzeugt eine Tabelle, die die Nummerierung der "echten" Tabellen durcheinander bringt. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Verzeichnisse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Abbildungsverzeichnis
+\fancyhead[R]{\listfigurename}
+\listoffigures\newpage
+
+% Tabellenverzeichnis
+\fancyhead[R]{\listtablename}
+\listoftables\newpage
+
+% Quelltextverzeichnis
+\fancyhead[R]{\lstlistlistingname}
+\lstlistoflistings\newpage
+
+% Kapitelüberschriften für den Arbeitstext
+\fancyhead[R]{\leftmark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Arabische Seitennummerierung
+\pagenumbering{arabic} 
+
+\include{chapter/Vorwort}
+
+\include{chapter/Abstract}
+
+\include{chapter/Einleitung}
+
+\include{chapter/Grundlagen}
+
+\include{chapter/EntwicklungUmsetzungBenutzerschnittstelle}
+
+\include{chapter/EntwicklungUmsetzungDatensammler}
+
+\include{chapter/EmpirischeErhebung}
+
+\include{chapter/AusblickWuerdigung}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{chapter/Anhang}
+
+\include{chapter/Quellenverzeichnis}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{chapter/Ehrenwoertliche_Erklaerung}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
