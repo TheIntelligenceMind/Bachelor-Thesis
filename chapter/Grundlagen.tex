@@ -3,9 +3,9 @@
 \subsection{Eingesetzte Technologien und Programme}
 Im Folgenden werden Technologien und Programme vorgestellt, die während des Projektes eingesetzt wurden.
 
-Unter den Technologien, die in dem Projekt Verwendung finden, befindet sich für die programmatischen Implementierungsarbeiten die Hochsprache Java sowie deren Standardbibliothek Swing zur GUI Entwicklung. Als integrierte Entwicklungsumgebung wird Eclipse Neon eingesetzt. Im Bereich der Datenauswertung und der grafischen Aufbereitung von Daten kommen die Standardprogramme Excel, Word und Visio, als Teil der Microsoft Office Suite, zum Einsatz. Für alle datenbankspezifischen Tätigkeiten wird die Datenbanksprache Oracle SQL mit dem Oracle eigens entwickelten Datenbankmanagement Programm SQL-Developer verwendet.
+Unter den Technologien, die in dem Projekt Verwendung finden, befindet sich für die programmatischen Implementierungsarbeiten die Hochsprache Java sowie deren Standardbibliothek Swing zur GUI Entwicklung. Als integrierte Entwicklungsumgebung wird Eclipse Neon eingesetzt. Im Bereich der Datenauswertung und der grafischen Aufbereitung von Daten kommen die Standardprogramme Excel, Word und Visio, als Teil der Microsoft Office Suite, zum Einsatz. 
 
-Oracle SQL ist die meistverwendete Datenbanksprache und wird überall dort genutzt, wo es darum geht Datenbankstrukturen und Daten mittels Programme zu erreichen. Eine Erweiterung dieser Datenbanksprache ist PL/SQL das dazu entwickelt wurde Unterprogramme mit Parametrisierung und Rückgabewerten in Form von Funktionen und Prozeduren auszuführen und als separate Programme innerhalb eines Datenbankschemas zu speichern. Das Datenbankmanagement Programm SQL-Developer vom Hersteller Oracle ist speziell für diese Ausführung der Datenbanksprache entwickelt worden. Darüber hinaus bietet es die Möglichkeit die Datenbankstrukturen zu verwalten und zu erweitern. Durch die integrierte Ausgabekonsole lassen sich selektierte Daten direkt in einer tabellarischen Ansicht darstellen. Mit der eingebetteten Autovervollständigung und Syntax Überprüfung lassen sich relativ einfach und unkompliziert verschachtelte Datenbankabfragen erstellen und ausführen.
+Für alle datenbankspezifischen Tätigkeiten wird die Datenbanksprache Oracle SQL mit dem Oracle eigens entwickelten Datenbankmanagement Programm SQL-Developer verwendet. Das auf einer grafischen Benutzeroberfläche basierende Tool, ist speziell zur Ausführung von Oracle SQL-Queries entwickelt worden. Mit der eingebetteten Autovervollständigung und Syntax Überprüfung lassen sich relativ einfach und unkompliziert verschachtelte Datenbankabfragen erstellen und ausführen. Die ausgeführten Abfragen werden anschließend innerhalb einer Ausgabekonsole tabellarische dargestellt. Zusätzlich bietet der SQL-Developer eine übersichtliche Möglichkeit Datenbankstrukturen zu verwalten. 
 
 \subsection{Software-Ergonomie}
 \begin{quote}
@@ -13,7 +13,7 @@ Oracle SQL ist die meistverwendete Datenbanksprache und wird überall dort genut
   \end{quote}
 Die relativ allgemeine aber trotzdem sehr treffende Definition von Software-Ergonomie wurde durch die Authorin Dr. Susanne Maaß 1993 veröffentlicht.
 
-Zunächst soll im Folgenden der Begriff der Software-Ergonomie genauer erläutert werden. Anschließend werden Begriffe, die in einem direktem Zusammenhang mit der Software-Ergonomie stehen, erklärt und abgegrenzt. Darauffolgend werden verschiedene Normen, Gesetze, Verordnungen und zuletzt sogenannte Usability Heuristics, die in der Vergangenheit entworfen wurden, vorgestellt.
+Zunächst soll der Begriff der Software-Ergonomie genauer erläutert werden. Anschließend werden Begriffe, die in einem direktem Zusammenhang mit der Software-Ergonomie stehen, erklärt und abgegrenzt. Darauffolgend werden verschiedene Normen, Richtlinien, Gesetze, Verordnungen und zuletzt sogenannte Usability Heuristiken, die in der Vergangenheit entworfen wurden, vorgestellt.
 
 \subsubsection{Begriffsdefinition}
 Software-Ergonomie ist die \glqq ability of a software system to interact easily and effectively with the user in order to fulfil his/her needs and expectations\grqq{} \citep[4]{Oppermann1988einfuehrung}, also die Fähigkeit einer Software einfach und effektiv mit einem Benutzer zu interagieren und dabei dessen Anforderungen und Erwartungen zu erfüllen. Das Ergebnis aus der Software-Ergonomie ist die Usability also die Gebrauchstauglichkeit einer Software. Sie ist besonders dort wichtig, wo Menschen mit Maschinen über Schnittstellen arbeiten \citep[vgl.][]{usabilityDe}. Die Usability ist der Zusammenschluss von Effektivität, Effizienz und Zufriedenheit. Effektivität beschreibt die Erreichung und das Ausmaß von Zielen. Effizienz stellt den Aufwand für die Erledigung des Ziels dar. Die Zufriedenheit spiegelt subjektive Faktoren wie \glqq joy of use\grqq{}, \glqq look and feel\grqq{} und \glqq motivation and fun\grqq{} wider \citep[vgl.][]{Holzinger2011human}. Die Zufriedenheit wird auch als User Experience (UX) bezeichnet, die als Erweiterung der Gebrauchstauglichkeit gesehen wird, da sie ästhetische und emotionale Faktoren mit einbezieht \citep[vgl.][]{usabilityDe}. Die Software-Ergonomie gehört neben der Hardware-Ergonomie und Organisations-Ergonomie zu den drei ergonomischen Disziplinen. Auch die Software-Ergonomie selbst lässt sich in drei weitere Bereiche aufteilen: Korrektheits-Ergonomie, Funktionalitäts-Ergonomie und Schnittstellen-Ergonomie \citep[vgl.][]{Oppermann1988einfuehrung}.
@@ -47,6 +47,7 @@ In der Abbildung \ref{fig:naehe} ist zu erkennen, dass die Elemente trotz unters
 
 \textbf{Prägnanz oder Gute Gestalt}
 
+Das Gesetz der Prägnanz oder der Guten Gestalt besagt das zusammengesetzte Objekte zuerst meist als einzelne einfache Objekte gesehen werden. Die Abbildung \ref{fig:praegnanzOderGuteGestalt} ist ein Beispiel dafür, das unsere kognitiven Fähigkeiten dazu in der Lage sind komplexere Objekte in getrennte geometrische Formen zu zerlegen.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=1]{img/gesetz_der_Praegnanz_oder_der_Guten_Gestalt.PNG}
@@ -54,7 +55,7 @@ In der Abbildung \ref{fig:naehe} ist zu erkennen, dass die Elemente trotz unters
     \caption*{\textbf{Quelle:} \citep{Dahm2006}}
   \label{fig:praegnanzOderGuteGestalt}
 \end{figure}
-Das Gesetz der Prägnanz oder der Guten Gestalt besagt das zusammengesetzte Objekte zuerst meist als einzelne einfache Objekte gesehen werden. Die Abbildung \ref{fig:praegnanzOderGuteGestalt} ist ein Beispiel dafür, das unsere kognitiven Fähigkeiten dazu in der Lage sind komplexere Objekte in getrennte geometrische Formen zu zerlegen. Dabei sieht man in der Abbildung eine Ellipse und ein Dreieck anstatt eines konstruierten Objektes. Diese Fähigkeit ist schon auf eine frühe Vergangenheit zurückzuführen, in der wir in dunklen Umgebungen bedrohliche Tiere vom restlichen Hintergrund trennen mussten um zu überleben \citep[vgl.][61]{Dahm2006}.
+ Daher sieht man in der Abbildung eine Ellipse und ein Dreieck anstatt eines konstruierten Objektes. Diese Fähigkeit ist schon auf eine frühe Vergangenheit zurückzuführen, in der wir in dunklen Umgebungen bedrohliche Tiere vom restlichen Hintergrund trennen mussten um zu überleben \citep[vgl.][61]{Dahm2006}.
 
 \textbf{Fortsetzung und Ergänzung}
 
@@ -66,7 +67,7 @@ Das Gesetz besagt das gleiche und ähnliche Objekte die Gestalt einer Linie anne
     \caption*{\textbf{Quelle:} \citep{Dahm2006}}
   \label{fig:fortsetzungUndErgaenzung1}
 \end{figure}
-Als Beispiel dient die Abbildung \ref{fig:fortsetzungUndErgaenzung1}, in der zwei gekrümmte Linien durch die Aneinanderreihung von mehreren Kreisen zu erkennen sind. Interessant ist, dass die beiden Linien als sich schneidende gekrümmte Linien gesehen werden und nicht als geknickte Linien die lediglich in einem Punkt identisch sind oder als vier von einem Punkt weglaufende Linien. Dieser Effekt tritt auch immer dann auf, wenn Objekte durch im Vordergrund liegende Objekte unterbrochen werden aber trotzdem vollständig wahrgenommen.
+Als Beispiel dient die Abbildung \ref{fig:fortsetzungUndErgaenzung1}, in der zwei gekrümmte Linien durch die Aneinanderreihung von mehreren Punkten zu erkennen sind. Interessant ist, dass die beiden Linien als sich schneidende gekrümmte Linien gesehen werden und nicht als geknickte Linien die lediglich in einem Punkt identisch sind oder als vier von einem Punkt weglaufende Linien. Ein ähnlicher Effekt tritt immer dann auf, wenn Objekte, die durch weiter im Vordergrund liegende Objekte unterbrochen werden, trotzdem vollständig wahrgenommen werden \citep[vgl.][61f]{Dahm2006}.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=1]{img/gesetz_der_Fortsetzung_und_Ergaenzung2.PNG}
@@ -74,11 +75,11 @@ Als Beispiel dient die Abbildung \ref{fig:fortsetzungUndErgaenzung1}, in der zwe
     \caption*{\textbf{Quelle:} \citep{Dahm2006}}
   \label{fig:fortsetzungUndErgaenzung2}
 \end{figure}
-Der Effekt der Fortsetzung wird in der oberen Abbildung \ref{fig:fortsetzungUndErgaenzung2} nochmal deutlicher. Hier werden bei der linken Abbildung zwei angefangene Objekte zu jeweils einem Dreieck ergänzt. Ebenso auf der rechten Seite, dort wird alleine durch die Andeutung von vier Ecken ein vollständiges blaues Quadrat wahrgenommen \citep[vgl.][61f]{Dahm2006}.
+Der Effekt der Fortsetzung bzw. Ergänzung wird in der oberen Abbildung \ref{fig:fortsetzungUndErgaenzung2} nochmal deutlicher. Auf der linken Seite der Abbildung werden sowohl die Fragmente drei blauer Kreise als auch die eines schwarz umrahmten Dreiecks vervollständigt. Zudem wird im Vordergrund ein weiteres weißes Dreieck wahrgenommen, dass die anderen Objekte teilweise verdeckt. Ebenso auf der rechten Seite, dort wird innerhalb eines blauen Quadrats ein weiteres blaues Quadrat, das mit den Ecken auf vier weißen Kreisen liegt, wahrgenommen \citep[vgl.][61f]{Dahm2006}.
 
 \textbf{Gemeinsames Schicksal}
 
-Aus einer Vielzahl von Objekten, lassen sich diejenigen zusammenfassen dessen gleichförmige Bewegung sich gleicht.
+Aus einer Vielzahl von Objekten, lassen sich diejenigen zusammenfassen die ein gleiches Schicksal erwartet. Anders ausgedrückt werden alle gleichförmig bewegenden Objekte vom Betrachter automatisch gruppiert.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=1]{img/gesetz_des_gemeinsamen_Schicksals.PNG}
@@ -86,11 +87,11 @@ Aus einer Vielzahl von Objekten, lassen sich diejenigen zusammenfassen dessen gl
     \caption*{\textbf{Quelle:} \citep{Dahm2006}}
   \label{fig:gemeinsamesSchicksal}
 \end{figure}
-Dieser Effekt tritt am stärksten bei bewegten Objekten auf und wird trotz unterschiedlicher Farben und Anordnungen wahrgenommen. In Abbildung \ref{fig:gemeinsamesSchicksal} wird der Effekt, der sich \glqq Gemeinsames Schicksal\grqq{} nennt, versucht darzustellen \citep[vgl.][62]{Dahm2006}.
+Dieser Effekt tritt am stärksten bei bewegten Objekten auf und wird trotz unterschiedlicher Farben und Anordnungen wahrgenommen. In Abbildung \ref{fig:gemeinsamesSchicksal} wird mit Hilfe von Strichen eine gleichförmige Bewegung angedeutet, um den Effekt des \glqq Gemeinsamen Schicksals\grqq{} zu veranschaulichen. \citep[vgl.][62]{Dahm2006}.
 
 \textbf{Gesetz der Vertrautheit}
 
-Das Gesetz der Vertrautheit beschreibt ein Phänomen, bei dem bekannte Formen immer wieder erkannt werden auch wenn sie aus einzelnen simplen Objekten zusammengesetzt werden.
+Das Gesetz der Vertrautheit beschreibt ein Phänomen, bei dem der Betrachter vertraute bzw. bekannte Formen immer wieder erkennt. Dafür sieht er aber nicht mehr die Bestandteile aus denen die Form entstanden ist \citep[vgl.][63f]{Dahm2006}.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.7]{img/gesetz_der_Vertrautheit.PNG}
@@ -98,10 +99,10 @@ Das Gesetz der Vertrautheit beschreibt ein Phänomen, bei dem bekannte Formen im
   \caption*{\textbf{Quelle:} \citep{Dahm2006}}
   \label{fig:vertrautheit}
 \end{figure}
-In Abbildung \ref{fig:vertrautheit} sieht der Betrachter auf den ersten Blick viele wahllos verstreute schwarze Flecken auf einem weißen Hintergrund. Wird nun die Erfahrung des Betrachters mit Informationen zu diesem Bild angereichert, wird er zukünftig diese Erfahrungen automatisch immer wieder abrufen ohne diese unterdrücken zu können. In dieser Abbildung ist in der rechten Bildhälfte ein herabschauender Dalmatiner zu sehen. Von vielen Personen wird der Dalmatiner durch bloßes hinschauen nicht wahrgenommen. Sobald der Betrachter einmal den Dalmatiner entdeckt hat, wird er nie wieder nur wahllose Flecken sehen können. \citep[vgl.][63f]{Dahm2006}.
+In Abbildung \ref{fig:vertrautheit} sieht der Betrachter auf den ersten Blick viele wahllos verstreute schwarze Flecken auf einem weißen Hintergrund. Wird nun die Erfahrung des Betrachters mit Informationen zu diesem Bild angereichert, wird er zukünftig diese Erfahrungen automatisch immer wieder abrufen ohne diese unterdrücken zu können. In der Abbildung ist in der rechten Bildhälfte ein herabschauender Dalmatiner zu sehen. Von vielen Personen wird der Dalmatiner durch bloßes hinschauen nicht wahrgenommen. Sobald der Betrachter einmal den Dalmatiner entdeckt hat, wird er nie wieder nur wahllose Flecken sehen können. \citep[vgl.][63f]{Dahm2006}.
 
 \subsubsection{Normen und Richtlinien}
-Neben den Gesetzen zur Gestaltung und Anordnung von Elementen gibt es eine Vielzahl von Normen, Gesetzen und Verordnungen die sich aus verschiedensten Arbeitsgruppen, Institutionen und Gremien entwickelt haben. Ein Grund für ihre Existenz sind die zunehmende Bedeutung von Benutzerschnittstellen und deren Gebrauchstauglichkeit und gleichzeitig auch die steigende Komplexität von Benutzerschnittstellen. Die Normen, also Anweisungen, einer höheren Instanz, für das Verhalten bei gewissen Tätigkeiten, Situationen, o.Ä. \citep[vgl.][]{duden}, dienen der Unterstützung bei der Entwicklung von einheitlichen und benutzerfreundlichen Benutzerschnittstellen. Gesetze und Verordnungen werden vom Gesetzgeber als Vorgaben an die Software-Ergonomie gestellt.
+Zu der Gestaltung und Anordnung von Elementen, gibt es eine Vielzahl von Normen und Richtlinien die sich aus verschiedensten Arbeitsgruppen, Institutionen und Gremien entwickelt haben. Ein Grund für ihre Existenz sind die zunehmende Bedeutung von Benutzerschnittstellen und deren Gebrauchstauglichkeit und gleichzeitig auch die steigende Komplexität von Benutzerschnittstellen. Die Normen, also Anweisungen einer höheren Instanz, für das Verhalten bei gewissen Tätigkeiten, Situationen, o.Ä. \citep[vgl.][]{duden}, dienen als Unterstützung für die Entwicklung von einheitlichen und benutzerfreundlichen Benutzerschnittstellen. 
 
 \textbf{Normen}
 
@@ -136,7 +137,7 @@ Bei der konkreten Umsetzung sollten zunächst Merkmale der zukünftigen Benutzer
 Im Abschnitt 12 der ISO Norm 9241 werden die charakteristischen Eigenschaften der Informationsdarstellung, d.h. Klarheit, Unterscheidbarkeit, Kompaktheit, Konsistenz, Erkennbarkeit, Lesbarkeit und Verständlichkeit als unterstützendes Bindeglied für die sieben Grundsätze aus Teil 110 definiert. Insbesondere die Selbstbeschreibungsfähigkeit und Erwartungskonformität einer Benutzerschnittstelle können, durch die Eigenschaften der ISO 9241-12, positiv beeinflusst werden. Insgesamt sind die Teile 110, 11 und 12 der ISO Norm 9241 eng miteinander verkettet und können positive aber auch negative Effekte aufeinander ausüben \citep[vgl.][Kap. 6]{ISO9241-110}. Die Wirkungsrichtungen der einzelnen Teile werden in Abbildung \ref{fig:beziehungIsoNormen} noch einmal genauer verdeutlicht.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.86]{img/Beziehung_ISO9241_ISO9241-11_ISO9241-12.png}
+  \includegraphics[scale=0.85]{img/Beziehung_ISO9241_ISO9241-11_ISO9241-12.png}
   \caption{Beziehung zwischen ISO 9241, ISO 9241-11 und ISO 9241-12 in Anlehnung an \citep[]{ISO9241-110}.}
   \caption*{\textbf{Quelle:} eigene Darstellung}
   \label{fig:beziehungIsoNormen}
@@ -145,16 +146,16 @@ Eine weitere Norm im Bereich der Software-Ergonomie auf die im Abschnitt 3.6 in 
 
 \textbf{Richtlinien}
 
-Zu den Richtlinien, die man bei der Software-Ergonomie berücksichtigen sollte, zählen ebenfalls die Styleguides eines Unternehmens. Dabei wird zwischen internen und externen Richtlinien unterschieden \citep[vgl.][74]{Richter2013}. Das Ziel dieser Stylguides ist es Systeme zu vereinheitlichen in dem gewisse Rahmenbedinugnen festgelegt werden \citep[vgl.][]{Sarodnick2011}. Sie enthalten Vorgaben zum Aussehen und Verhalten von Bedienelementen, im jeweiligen Kontext \citep[vgl.][72]{Richter2013}. Jedes Unternehmen sollte gewisse Standards verfolgen, damit eine einheitliche und konsistente Weiterentwicklung und Benutzung der Software gewährleistet ist.
+Zu den Richtlinien, die man bei der Software-Ergonomie berücksichtigen sollte, zählen die Styleguides eines Unternehmens auch dazu. Dabei wird zwischen internen und externen Richtlinien unterschieden \citep[vgl.][74]{Richter2013}. Das Ziel dieser Styleguides ist es Systeme zu vereinheitlichen in dem gewisse Rahmenbedingungen festgelegt werden \citep[vgl.][]{Sarodnick2011}. Sie enthalten Vorgaben zum Aussehen und Verhalten von Bedienelementen, im jeweiligen Kontext \citep[vgl.][72]{Richter2013}. Jedes Unternehmen sollte gewisse Standards verfolgen, damit eine einheitliche und konsistente Weiterentwicklung und Benutzung der Software gewährleistet ist.
 
-Der Vorteil von Stylguides liegt darin, dass dem Entwickler gewisse Denkprozesse bei der Auseinandersetzung mit Oberflächen durch die Stylguides abgenommen werden. Ebenso dienen sie auch gleichzeitig als eine Art Checkliste für den Entwickler \citep[vgl.][214]{Thomaschewski2013}.
+Der Vorteil von Styleguides liegt darin, dass dem Entwickler gewisse Denkprozesse bei der Auseinandersetzung mit Oberflächen durch die Styleguides abgenommen werden. Ebenso dienen sie auch gleichzeitig als eine Art Checkliste für den Entwickler \citep[vgl.][214]{Thomaschewski2013}.
 
-Auf der anderen Seite bringen Stylguides auch per se Probleme mit sich. Beispielsweise deckt die Dokumentation nicht alle Funktionen und Ziele ab oder es braucht mehrere Styleguides, die aber untereinander nicht konsistent sind oder die Styleguides sind nicht auf dem aktuellsten Stand. Diese Probleme erzeugen wiederum ein Schwierigkeiten und Probleme bei der Umsetzung \citep[vgl.][215]{Thomaschewski2013}. Daher sollte darauf geachtet werden, dass die Dokumentationen zu jedem Zeitpunkt aktuell und widerspruchsfrei vorzufinden sind.
+Auf der anderen Seite bringen Styleguides auch per se Probleme mit sich. Beispielsweise deckt die Dokumentation nicht alle Funktionen und Ziele ab oder es braucht mehrere Styleguides, die aber untereinander nicht konsistent sind oder die Styleguides sind nicht auf dem aktuellsten Stand. Diese Probleme erzeugen wiederum Schwierigkeiten und Probleme bei der Umsetzung \citep[vgl.][215]{Thomaschewski2013}. Daher sollte darauf geachtet werden, dass die Dokumentationen zu jedem Zeitpunkt aktuell und widerspruchsfrei vorzufinden sind.
 
 
 \subsubsection{Gesetze und Verordnungen}
 
-Die \gls{ArbStaettV} ist ein Gesetz das anstelle der vorherigen Arbeitsschutzverordnung am 3. Dezember 2016 in Kraft getreten ist. Die \gls{ArbStaettV} hat als Ziel Beschäftigte in Arbeitsstätten vor Arbeitsunfällen und Berufskrankheiten zu schützen. Das Gesetz enthält Mindestvorgaben an die Arbeitsstätten, die zur Sicherheit und zum Gesundheitsschutz der Beschäftigten eingeführt wurden \citep[vgl.][]{BAuA}. 
+Neben den Gestaltgesetzen, Normen und Richtlinien die mit ihren Empfehlungen im Designprozess unterstützen, gibt es Gesetze und Verordnungen die gewisse Vorgaben und Standards fordern. Diese sind meist darauf bedacht die Arbeitnehmer zu schützen und eine nationale wie auch internationale Vereinheitlichung von IT-Systemen zu fördern. Die \gls{ArbStaettV} ist einer dieser Gesetze, das anstelle der vorherigen Arbeitsschutzverordnung am 3. Dezember 2016 in Kraft getreten ist. Die \gls{ArbStaettV} hat als Ziel Beschäftigte in Arbeitsstätten vor Arbeitsunfällen und Berufskrankheiten zu schützen. Das Gesetz enthält Mindestvorgaben an die Arbeitsstätten, die zur Sicherheit und zum Gesundheitsschutz der Beschäftigten eingeführt wurden \citep[vgl.][]{BAuA}. 
 
 Ein Zusammenhang des Gesetztes mit dem Thema Ergonomie wird deutlich, wenn man sich den Anlagen Teil 6 des Gesetztes anschaut. Dort lassen sich Maßnahmen und Vorgaben zur Gestaltung von Bildschirmarbeitsplätzen finden. Diese Anforderungen wie zum Beispiel die angemessene Skalierung von Texten und Grafiken oder auch der ausreichende Kontrast von Texten und Grafiken zum Hintergrund, tragen ebenfalls zu den ergonomischen Gesichtspunkten einer gebrauchstauglichen Benutzerschnittstelle bei \citep[vgl.][Anhang: Kap. 6]{ArbStaettV}.
 
@@ -195,14 +196,15 @@ Bei der Art der Evaluation lässt sich zwischen der formativen Evaluation und de
 
 \textbf{formative Evaluation}
 
-Bei der formativen Evaluation versucht man mit entsprechenden Methoden möglichst früh im Entwicklungsprozess anzusetzen, um eine hohe Software Qualität und damit auch Ergonomie zu erzielen. Frühzeitige Benutzerbeteiligung und Prototyping helfen dabei die Bedürfnisse der Anwender in der Software abbilden zu können. Die formative Evaluation erhebt sowohl quantitative als auch qualitative Daten. Dabei werden die quantitativen dazu verwendet die Zielerfüllung zu überprüfen. Die qualitativen Daten hingegen werden zur Ableitung von Schwächen und Verbesserungsvorschlägen bewertet \citep[vgl.][7]{Hegner2003}.
+Bei der formativen Evaluation versucht man mit entsprechenden Methoden möglichst früh im Entwicklungsprozess anzusetzen, um eine hohe Software Qualität und damit auch Ergonomie zu erzielen. Frühzeitige Benutzerbeteiligung und Prototyping helfen dabei die Bedürfnisse der Anwender in der Software abbilden zu können. Die formative Evaluation erhebt sowohl quantitative als auch qualitative Daten. Dabei werden die quantitativen dazu genutzt die Zielerfüllung zu überprüfen. Die qualitativen Daten hingegen werden zur Ableitung von Schwächen und Verbesserungsvorschlägen verwendet. Sie kommen überwiegend in der formativen Evaluation zum Einsatz \citep[vgl.][7]{Hegner2003}.
 
 \textbf{summative Evaluation}
 
-Zum anderen gibt es die summative Evaluation die darauf ausgerichtet ist Software miteinander zu vergleichen und Hypothesen und Erwartungen zu überprüfen. Dazu könnte eine Software zum Beispiel an gewissen Kriterien gemessen werden, die zu Anfang aufgestellt wurden. Die verwendeten Verfahren in der summativen Evaluation stammen meist aus dem quantitativen Bereich wie zum Beispiel der Fragebogen \citep[vgl.][8]{Hegner2003}.
+Zum anderen gibt es die summative Evaluation die darauf ausgerichtet ist Software miteinander zu vergleichen oder Hypothesen und Erwartungen zu überprüfen. Dazu könnte eine Software zum Beispiel an gewissen Kriterien gemessen werden, die zu Anfang aufgestellt wurden. Die verwendeten Erhebungsverfahren in der summativen Evaluation stammen meist aus dem quantitativen Bereich wie zum Beispiel der Fragebogen \citep[vgl.][8]{Hegner2003}.
 
 \subsubsection{Erhebungsmethoden}
-Bei der Evaluation im Bereich der Software gibt es verschiedene Methodiken und Vorgehensweisen, mit denen sich Daten erheben lassen. Die Ausrichtung einer Methode, lässt sich in einem Kontinuum zwischen subjektiv und objektiv einordnen.
+\label{sec:erhebungsmethoden}
+Bei der Evaluation im Bereich der Software gibt es verschiedene Methodiken und Vorgehensweisen, mit denen sich Daten erheben lassen. Diese erhobenen Daten sind im Evaluationsprozess von Bedeutung. Je nach Ziel, Benutzergruppe, Ort, Art der Informationen und Ressourcen, fällt die Wahl einer Evaluationsmethode unterschiedlich aus \citep[vgl.][10]{Hegner2003} und somit auch die Art der Erhebung. Die Ausrichtung einer Erhebungsmethode, lässt sich von objektiv über empirisch und analytisch bis hin zu subjektiv einordnen \citep[vgl.][15]{Hegner2003}.
 
 \textbf{objektive Methoden}
 
@@ -213,7 +215,6 @@ Bei den objektiven Methoden ist es das Ziel, \glqq harte \grqq{} Daten zu erhebe
 Subjektive Methoden versuchen möglichst nah bei den Eindrücken und Erfahrungen der Benutzern anzusetzen. Dabei werden Meinungen und Einschätzungen der Benutzer eingeholt, um den zu evaluierenden Gegenstand zu bewerten. Die erhobenen Daten zählen zu den \glqq weichen \grqq{} Daten. Die subjektiven Methoden sind in ihrer Durchführung mit eher geringem Aufwand verbunden, jedoch kann die nachfolgende Auswertung, bei umfangreichen Antworten, sehr zeitintensiv sein \citep[vgl.][18]{Hegner2003}.
 
 Man kann sagen, dass beide Arten von Methoden ihre Vor- und Nachteile besitzen, daher ist es oftmals sinnvoll die Methodiken miteinander zu kombinieren. Dadurch werden Schwächen mancher Methoden durch Stärken anderer ausgeglichen \citep[vgl.][261]{Pruemper1997}. In der Abbildung \ref{fig:erhebungsmethodenObjektivitaetBenutzerbeteiligung} wird noch einmal verdeutlicht welche Erhebungsmethoden es gibt und wie diese im Kontext der Objektivität bzw. Subjektivität und der dazu stehenden Benutzerbeteiligung einzuordnen sind.
-
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.8]{img/Datenerhebungsmethoden_Objektivitaet_Benutzerbeteiligung.png}
@@ -221,7 +222,6 @@ Man kann sagen, dass beide Arten von Methoden ihre Vor- und Nachteile besitzen, 
   \caption*{\textbf{Quelle:} eigene Darstellung}
   \label{fig:erhebungsmethodenObjektivitaetBenutzerbeteiligung}
 \end{figure}
-
 Man kann sehen, dass sich die Methoden teilweise nicht genau einer Kategorie zuordnen lassen. Daher wurden zwischen der Subjektivität und der Objektivität noch die Formen der analytischen (leitfadenorientierten) und der empirischen Evaluation eingeführt \citep[vgl.][15]{Hegner2003}.
 
 
@@ -229,33 +229,67 @@ Im folgenden werden explizit nur die Erhebungsmethoden vorgestellt und eingeordn
 
 \textbf{Logfile-Erhebung}
 
-Eine Methode zur Erhebung objektiver Daten ist die Logfile-Erhebung. Bei der Methode werden die Daten automatisch durch ein Erfassungssystem erhoben. Interaktionen die Benutzer mit dem System erzeugen werden aufgezeichnet. Beispielsweise werden Zeiten zwischen Interaktionen oder die Häufigkeit von Maus- und Tastaturanschlägen gemessen \citep[vgl.][63]{Hegner2003}. 
+Eine Methode zur Erhebung objektiver Daten, da sie nicht  ist die Logfile-Erhebung. Bei der Methode werden die Daten automatisch durch ein Erfassungssystem erhoben. Interaktionen die Benutzer mit dem System erzeugen werden vollständig aufgezeichnet. Beispielsweise werden Zeiten zwischen Interaktionen oder die Häufigkeit von Maus- und Tastaturanschlägen gemessen \citep[vgl.][63]{Hegner2003}. Diese Methode der Erhebung bietet eine effiziente und kostengünstige Aufzeichnung von Beobachtungsdaten \citep[vgl.][Kap. 65.3]{Baur2014}. Da die Logfile-Erhebung keine Kontextinformationen erfasst und rein objektive Daten wie z.B. Maus- oder Tastaturanschläge aufzeichnet, bietet sich eine Kombination mit einer Befragungsmethode wie z.B. dem Fragebogen an \citep[vgl.][17\psq]{Hegner2003}.
 
 \textbf{Fragebogen}
 
-Eine subjektive jedoch in Teilen auch objektive Methode ist der standardisierte Fragebogen. Hierbei werden von den Benutzern Meinungen, Erfahrungen und Einschätzungen zum untersuchenden Evaluationsgegenstand eingeholt. Das Ergebnis eines Fragebogens kann durch eine Häufigkeitsauswertung von freien und vorgegebenen Antworten ausgewertet werden. Desto freier die Benutzer antworten können umso vielfältiger wird das Spektrum der Antworten. Auf der anderen Seite sinkt bei steigender Freiheit der Benutzer auch die Bereitschaft zum Antworten und die Konstruktivität der Antworten. Es gibt standardisierte Fragebögen wie den Questionnarie for User Interaction Satisfaction (QUIS), den EN ISO 9241-110 oder den IsoMetrics Fragenbogen, der im folgenden genauer vorgestellt wird \citep[vgl.][Kap. 4.5.1.1]{Hegner2003}.
+Eine subjektive jedoch in Teilen auch objektive Methode ist der standardisierte Fragebogen. Hierbei werden von den Benutzern Meinungen, Erfahrungen und Einschätzungen zum untersuchenden Evaluationsgegenstand eingeholt. Das Ergebnis eines Fragebogens kann durch eine Häufigkeitsauswertung von freien und vorgegebenen Antworten ermittelt werden. Je freier eine Frage beantwortet werden darf umso vielfältiger wird das Antwortenspektrum. Auf der anderen Seite sinkt bei steigender Freiheit die Bereitschaft der Befragten zu antworten und bestenfalls auch konstruktiv zu antworten. Im Bereich der Usability gibt es mehrere standardisierte Fragebögen wie den Questionnarie for User Interaction Satisfaction (QUIS), den IsoMetrics oder Isonorm 9241/10 Fragebogen, welcher nachfolgend genauer vorgestellt wird \citep[vgl.][Kap. 4.5.1.1]{Hegner2003}.
 
-Der IsoMetrics Fragebogen wurde wie auch der EN ISO 9241-110 Fragebogen basierend auf den sieben Gestaltungsgrundsätzen der DIN EN ISO 9241-110 entwickelt. Sein Fragenkatalog teilt sich daher auch genau in diese sieben Kategorien auf und enthält insgesamt 75 Fragen. Die Fragen lassen sich jeweils auf einer 5-stelligen Skala, von \glqq stimmt nicht \grqq{} bis \glqq stimmt sehr \grqq{}, beantworten. Zusätzlich hat der Befragte bei jeder Frage auch die Möglichkeit \glqq keine Angabe \grqq{} anzukreuzen. In dem Fall wird die Antwort aus der Bewertung herausgenommen. Da es sich im folgenden um eine summative Evaluation handelt, wird der IsoMetrics Fragebogen in seiner Kurzform gewählt. Die Kurzform sieht, im Gegensatz zur Langform, keine freien Felder zur Meinungsäußerung vor \citep[vgl.][Kap. 3.4]{Figl2010}. In Abbildung \ref{fig:isoMetricAntwortschema} wird das Antwortschema des IsoMetric Fragebogens noch einmal gezeigt. Der komplette Fragebogen ist im Anhang ??? zu finden.
+Der aus dem deutschsprachigen Raum stammende Isonorm 9241/10 Fragebogen, wurde wie auch der IsoMetrics Fragebogen, basierend auf der EN ISO 9241-110 entwickelt. Sein Fragenkatalog unterteilt sich in sieben Kriterien, die äquivalent zu den Gestaltungsgrundsätzen der EN ISO 9241-10 sind. Mit fünf Items pro Kriterium besitzt der Fragebogen insgesamt 35 Items. Die Aussagen zu der Usability werden auf einer 7-stelligen Bewertungsskala (siehe Abb. \ref{fig:IsonormBewertungsskala}) eingeordnet, die von sehr negativ (\glqq $---$\grqq{}) bis sehr positiv (\glqq $+++$\grqq{}) reicht \citep[vgl.][Kap. 3.3]{Figl2010}. 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.8]{img/IsoMetricAntwortschema.PNG}
-  \caption{Antwortschema des IsoMetrics Fragebogens.}
+  \includegraphics[scale=0.95]{img/Isonorm_Bewertungsskala.PNG}
+  \caption{Bewertungsskala des Isonorm 9241/110 Fragebogens.}
   \caption*{\textbf{Quelle:} eigene Darstellung}
-  \label{fig:isoMetricAntwortschema}
+  \label{fig:IsonormBewertungsskala}
 \end{figure}
-
-
-Quelle für den Fragebogen: http://www.isometrics.uni-osnabrueck.de/qn.htm
+Mit einer etwa 10 minütigen Bearbeitungszeit, eignet sich der Isonorm Fragebogen besonders bei der Frage: \glqq Entspricht die Software den Kriterien der EN ISO 9241-110 Norm?\grqq{}. Zudem lässt er sich gut in iterative Softwareprozesse einbringen, indem er für eine schnelle Evaluierung der einzelnen Prototypen fungiert \citep[vgl.][Kap. 3.3]{Figl2010}.
 
 \subsubsection{Gütekriterien für Erhebungsmethoden}
 
-Die Güte oder auch Qualität einer Erhebungsmethode wird anhand der drei Hauptgütekriterien Objektivität, Validität und Reliabilität bewertet. Darüber hinaus gibt es auch noch weitere Nebengütekriterien (z.B. Normierung, Ökonomie und Nützlichkeit) auf die im Folgenden jedoch nicht genauer eingegangen werden soll \citep[vgl.][Kap. 3.5]{Figl2010}.
+Die Güte oder auch Qualität einer Erhebungsmethode wird anhand der drei Hauptgütekriterien Objektivität, Validität und Reliabilität bewertet. Darüber hinaus gibt es auch noch weitere Nebengütekriterien (z.B. Normierung, Ökonomie oder Nützlichkeit) \citep[vgl.][Kap. 3.5]{Figl2010} auf die im Folgenden jedoch nicht genauer eingegangen werden soll.
 
 Die Objektivität sagt aus, ob ein Testergebnis unabhängig von der Testperson ist. Bedeutet das verschiedene Personen, die gleichen Testergebnisse erzielen \citep[vgl.][Kap. 1]{Himme2007}. Dieses Kriterium wird durch die standardisiert vorgegebenen Antwortmöglichkeiten und die Auswertungsvorschriften für die Ergebnisse gewährleistet \citep[vgl.][Kap. 3.5.1]{Figl2010}.
 
-Die Validität, die angibt inwiefern ein Messinstrument gültig ist bzw. die benötigte Genauigkeit besitzt. Es wird überprüft ob das gemessene, dem entspricht, was gemessen werden soll \citep[vgl][Kap. 1]{Himme2007}. Die Gültigkeit des IsoMetrics Fragebogens wurde bereits bei der Konzeption durch eine Auswahl von theoretisch fundierten Fragen, berücksichtigt \citep[vgl.][Kap. 3.5.2]{Figl2010}.
+Die Validität gibt an, inwiefern ein Messinstrument gültig ist bzw. die benötigte Genauigkeit besitzt. Es wird überprüft ob das Gemessene, dem entspricht, was gemessen werden soll \citep[vgl][Kap. 1]{Himme2007}. Dabei lässt sich bei der Validität zwischen Inhalts-, Kriteriums und Konstruktvalidität unterscheiden. In allen drei Bereichen zeigt der Isonorm Fragebogen eine ausreichende Erfüllung der Anforderungen \citep[vgl.][Kap. 3.5.2]{Figl2010}.
 
-Als drittes Qualitätsmerkmal wird die Reliabilität herangezogen. Diese beschreibt die Zuverlässigkeit und Stabilität eines Messinstruments. Um eine hohe Zuverlässigkeit bei der Erhebung von Daten zu erreichen, müssen unter anderem gemessene Ergebnisse durch erneutes Messen reproduzierbar sein \citep[vgl.][Kap. 1]{Himme2007}. Die erreichte Reliabilität des IsoMetrics Fragebogens wurde durch \citep[vgl.][2-3]{Gediga1999} mit zufriedenstellend bewertet.
+Als drittes Qualitätsmerkmal wird die Reliabilität herangezogen. Diese beschreibt die Zuverlässigkeit und Stabilität eines Messinstruments. Um eine hohe Zuverlässigkeit bei der Erhebung von Daten zu erreichen, müssen unter anderem gemessene Ergebnisse durch erneutes Messen reproduzierbar sein \citep[vgl.][Kap. 1]{Himme2007}. Der Isonorm Fragebogen weist sowohl eine gute innere Konsistenz als auch eine hohe Retest-Reliabilität auf \citep[vgl.][Kap. 3.5.3]{Figl2010}. Die Logfile-Erhebung weist durch ihre hohe Automatisierung generell eine höhere Reliabilität als ein Fragebogen auf \citep[vgl.][Kap. 65.3]{Baur2014}
+
+\subsection{Usability-Engineering}
+\subsubsection{Vorgehensmodell}
+Usability-Engineering ist ein Vorgehen, das mit Hilfe eines Vorgehensmodell und dazugehörigen Methoden, bei der Entwicklung von benutzerfreundlicher Software unterstützt. Dabei ist ein Vorgehensmodell eine definierte Abfolge von Prozessschritten, die während des Entwicklungsprozesses durchlaufen werden \citep[vgl.][7]{Richter2013}. Generell lässt sich bei Vorgehensmodellen in der Entwicklung zwischen konventionellen und agilen Modellen unterscheiden. Zu den konventionellen oder auch klassischen Ansätzen zählen zum Beispiel das Wasserfallmodell \citep[vgl.][27\psqq]{Brandt2008}. Die klassischen Modelle sind meist einfach zu verstehen aber durch ihre sequenzielle Abfolge von Prozessschritten eher unflexibel in der Handhabung.
+
+Agile Vorgehensmodelle wie zum Beispiel das Spiralmodell oder \gls{XP} folgen einem iterativen Ansatz. Im Entwicklungsprozess bedeutet das, dass mehrmals gleiche Phasen bzw. Tätigkeiten durchlaufen werden können und keine vordefinierte Reihenfolge eingehalten werden muss \citep[vgl.][29\psqq]{Brandt2008}. Grundsätzlich werden beim Usability-Engineering das Umfeld (Nutzungskontext), die Arbeitsabläufe, geeignete Funktionalitäten und Konzepte zu den grafischen Benutzeroberflächen analysiert und erarbeitet. Dabei hat sich das Usability-Engineering zum Ziel gemacht komplexe Strukturen zu vereinfachen und eine Lösung zu entwerfen, die genau auf die Anforderungen der Benutzergruppe angepasst ist \citep[vgl.][7]{Richter2013}. Somit bietet sich das Vorgehen gut bei der Entwicklung von grafischen Benutzeroberflächen an, da die Benutzer mit ihren Rückmeldungen ein fester Bestandteil der Entwicklungsphase sind.
+
+Die EN ISO 9241-210 hat das Usability-Engineering als Standardvorgehen bei der Entwicklung von ergonomischer Software etabliert. Das Modell besitzt einen hohen Abstraktionsgrad und lässt sich daher für verschiedene Projekttypen einsetzten \citep[vgl.][21]{Ecker2015}. In der folgenden Abbildung \ref{fig:usabilityEngineeringVorgehensmodell} werden die vier Hauptphasen des Usability-Engineerings nach ISO 9241-210 dargestellt und nachfolgend erläutert.
+\begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[scale=1]{img/Usability_Engineering_Vorgehensmodell.png}}
+  \caption{Usability-Engineering Prozessmodell in Anlehnung an DIN EN ISO 9241-210.}
+  \caption*{\textbf{Quelle:} eigene Darstellung}
+  \label{fig:usabilityEngineeringVorgehensmodell}
+\end{figure}
+\begin{enumerate}
+    \item In der ersten Phase des Software Projektes geht es darum, den Nutzungskontext möglichst voll umfassend zu verstehen und zu beschreiben. Zum Nutzungskontext gehören die betroffenen Benutzergruppen mit deren Tätigkeiten und Arbeitsabläufen und die Arbeitsumgebung selbst. Die benötigten Informationen lassen sich mit Hilfe von Erhebungsmethoden (siehe Kap. 4.3.3) wie z.B. Fragebögen oder persönlichen Interviews eruieren \citep[vgl.][28\psq]{Ecker2015}.
+    \item In der zweiten Phase des Modells werden die Anforderungen der betroffenen Benutzergruppen analysiert und dokumentiert. Dazu gehört, dass sich der Projektleiter mit den Benutzern und deren Sichtweise auseinander setzt und die Anforderungen zusammen erarbeitet \citep[vgl.][30\psq]{Ecker2015}.
+    \item Im dritten Prozessschritt werden die definierten Anforderungen in Form von Prototypen bzw. MockUps ausgearbeitet. In der Phase werden Entwürfe sowohl von der Ablaufsteuerung als auch vom Oberflächendesign erstellt. Die Ablaufsteuerung beinhaltet die wechselseitige Interaktion zwischen Benutzer und Software. Diese Abläufe werden in geeignete Schnittstellen oder Prozessdiagramme abgebildet. Der zweite Teil der Entwicklung besteht aus dem Entwurf der Schnittstelle. Dazu gehört, dass die Interaktionsart (Maus, Tastatur, etc.) mit der Schnittstelle festgelegt wird und dem entsprechend geeignete Bedienelemente ausgewählt und ergonomisch angeordnet werden \citep[vgl.][33\psq]{Ecker2015}.
+    \item Im vierten Schritt werden die Gestaltungslösungen aus dem vorherigen Schritt evaluiert. Die Benutzer bewerten die entworfenen MockUps, Skizzen oder die fertig implementierte Schnittstelle, um Mängel oder Fehler frühzeitig zu erkennen. Für die Bewertung der Gestaltungslösungen sind Benutzungstests, Fragebögen oder Fokusgruppen mögliche Herangehensweisen. Sollte keiner der Gestaltungslösungen die Nutzungsanforderungen ausreichend erfüllen, so können iterativ vorherige Phasen durchlaufen werden \citep[vgl.][34\psq]{Ecker2015}. Hingegen kann der Entwicklungsprozess bei befriedigender Lösung beendet und die finale Gestaltungslösung ausgerollt werden.
+\end{enumerate}
+
+\subsubsection{Nutzungskontext}
+Der Nutzungskontext muss im Zuge der zweiten Phase aus dem Vorgehensmodell nach ISO 9241-210 analysiert werden. Der Nutzungskontext setzt sich aus den betroffenen Benutzergruppen, den umliegenden Arbeitsabläufen und dem technischen Umfeld zusammen. Diese Bestandteile sollen im Folgenden genauer erläutert werden.
+
+\textbf{Benutzergruppen}
+
+Einen Teil der Kontextanalyse beinhaltet die Erhebung von Merkmale der Benutzer. Zu den Merkmalen, die durchaus einen Einfluss auf die Entwicklung des interaktiven Systems nehmen können, gehören Kenntnisse, Fertigkeiten, Erfahrungen, Ausbildung, Übungsgrad, physische Merkmale und motorische und sensorische Fähigkeiten \citep[vgl.][28]{Ecker2015}. Die unterschiedlichen Ausprägungen der Benutzer (insofern diese gegeben sind), sollten ebenso mit in den Entwicklungsprozess einfließen.
+
+\textbf{Arbeitsabläufe}
+
+Ebenso spielen für den Entwurf der Benutzerschnittstelle die Ausprägungen der Arbeitsabläufe eine Rolle. Typischerweise sollte neben dem Erfassen der Tätigkeiten und ihrem Zusammenspiel auch die Dauer und Häufigkeit betrachtet werden \citep[vgl.][28]{Ecker2015}.
+
+\textbf{Technisches Umfeld}
+
+Zu Erhebung des technischen Umfelds, lässt sich generell zwischen der Software und der Hardware unterscheiden. Die Software manifestiert sich zum Beispiel im Betriebssystem der Benutzer, das durchaus Unterschiede aufweisen kann. Hingegen werden zur Hardware jegliche Hilfsmittel am Arbeitsplatz wie Monitore, Drucker oder Taschenrechner gezählt und aufgenommen \citep[vgl.][28]{Ecker2015}.
 
 \subsection{Statistische Datenanalyse}
 Damit für spätere Auswertungen und Analysen der erhobenen Daten die benutzten Methoden mit denen Daten normalisiert, statistisch bewertet und für grafische Darstellungen aufbereitet werden, klar und verständlich sind werden im Folgenden die Grundbegriffe und weiterreichende Methoden der Statistik, die im Rahmen der Thesis zum Einsatz kommen, vorgestellt und erklärt.
@@ -340,9 +374,9 @@ Sollte man Intervalle innerhalb einer nicht normalverteilten Verteilung angeben 
 \subsubsection{Studentsche T-Test und $Chi^2$ Unabhängigkeitstest}
 
 \subsection{Kosten-Nutzen-Analyse}
-Die Kosten-Nutzen-Analyse (KNA) ist eine Methode mit der durch den Vergleich von Kosten und Nutzen eine objektive Aussage über die Wirtschaftlichkeit eines Projektvorhabens getroffen werden kann. Auf der einen Seite werden die Kostenpunkte eines Projektes identifiziert und quantifiziert. Auf der anderen Seite werden jegliche zu erwartende Effizienzpotential, die aus dem Projektvorhaben resultieren, betrachtet und für einen Vergleich monetarisiert. Die KNA ist für verschiedenste Personen eines Projektes interessant. Zum Beispiel sind der Auftraggeber und Investoren daran gelegen, dass sich das Projekt und die damit entstehenden Kosten nach einer gewissen Zeit amortisieren und ein positives Ergebnis erzielt wird. Gerade in der Planungsphase eines Projekts können Projektbeteiligte mit Hilfe der KNA die positiven und negativen Effekte eines Projekts besser abschätzen und so gezielter und effektiver planen und agieren \citep{Hanusch2011}. Im Folgenden wird auf Grund des Projektumfangs meiner Bachelor Thesis nur von einer minimalistischen Form der KNA Gebrauch gemacht. In der späteren Analyse werden bewusst einige Kosten und Nutzen, die entweder nicht klar identifizierbar sind oder wenn erfassbar dann nur in Verbindung mit übermäßigem Aufwand, vernachlässigt. 
+Die Kosten-Nutzen-Analyse ist eine Methode mit der durch den Vergleich von Kosten und Nutzen eine objektive Aussage über die Wirtschaftlichkeit eines Projektvorhabens getroffen werden kann. Auf der einen Seite werden die Kostenpunkte eines Projektes identifiziert und quantifiziert. Auf der anderen Seite werden jegliche zu erwartende Effizienzpotential, die aus dem Projektvorhaben resultieren, betrachtet und für einen Vergleich monetarisiert. Die \gls{KNA} ist für verschiedenste Personen eines Projektes interessant. Zum Beispiel sind der Auftraggeber und Investoren daran gelegen, dass sich das Projekt und die damit entstehenden Kosten nach einer gewissen Zeit amortisieren und ein positives Ergebnis erzielt wird. Gerade in der Planungsphase eines Projekts können Projektbeteiligte mit Hilfe der \gls{KNA} die positiven und negativen Effekte eines Projekts besser abschätzen und so gezielter und effektiver planen und agieren \citep{Hanusch2011}. Im Folgenden wird auf Grund des Projektumfangs meiner Bachelor Thesis nur von einer minimalistischen Form der \gls{KNA} Gebrauch gemacht. In der späteren Analyse werden bewusst einige Kosten und Nutzen, die entweder nicht klar identifizierbar sind oder wenn erfassbar dann nur in Verbindung mit übermäßigem Aufwand, vernachlässigt. 
 
-Ein Bestandteil der KNA, der im oberen Teil schon kurz erwähnt wurde, ist der Amortisationszeitpunkt des zu überprüfenden Projektes, also der Zeitpunkt an dem die Summe der Kosten und der Nutzen gleich null sind. Dieser Zeitpunkt wird auch als Break-Even-Point bezeichnet. Umso näher der Break-Even-Point am Startzeitpunkt des Projekts liegt desto höher ist dessen Wirtschaftlichkeit einzuschätzen \citep{Hanusch2011}.
+Ein Bestandteil der \gls{KNA}, der im oberen Teil schon kurz erwähnt wurde, ist der Amortisationszeitpunkt des zu überprüfenden Projektes, also der Zeitpunkt an dem die Summe der Kosten und der Nutzen gleich null sind. Dieser Zeitpunkt wird auch als Break-Even-Point bezeichnet. Umso näher der Break-Even-Point am Startzeitpunkt des Projekts liegt desto höher ist dessen Wirtschaftlichkeit einzuschätzen \citep{Hanusch2011}.
 
-Ein weitere Begriff der im Zusammenhang mit der KNA häufig fällt ist das Effizienzpotential. Dies sagt aus, dass der Nutzen eines Projekts ein gewisses Potential besitzt. Jedoch wird dieser Nutzen relativiert, da er in Wirklichkeit noch nicht realisiert wurde und sich durch die Veränderung von Einflussfaktoren zukünftig noch ändern kann. Die Kosten-Nutzen-Analyse \glqq [...] stellt das wohl bekannteste wirtschaftlichkeitsanalytische Verfahren für den öffentlichen Sektor dar\grqq{} \citep[1]{Hanusch2011}. Es gibt den Projektplanern aber nie eine 100\% Sicherheit über das tatsächliche Endergebnis eines Projektes.
+Ein weitere Begriff der im Zusammenhang mit der \gls{KNA} häufig fällt ist das Effizienzpotential. Dies sagt aus, dass der Nutzen eines Projekts ein gewisses Potential besitzt. Jedoch wird dieser Nutzen relativiert, da er in Wirklichkeit noch nicht realisiert wurde und sich durch die Veränderung von Einflussfaktoren zukünftig noch ändern kann. Die \gls{KNA} \glqq [...] stellt das wohl bekannteste wirtschaftlichkeitsanalytische Verfahren für den öffentlichen Sektor dar\grqq{} \citep[1]{Hanusch2011}. Es gibt den Projektplanern aber nie eine 100\% Sicherheit über das tatsächliche Endergebnis eines Projektes.
 
