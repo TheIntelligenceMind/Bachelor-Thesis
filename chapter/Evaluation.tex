@@ -1,16 +1,40 @@
 \section{Evaluation}
+Als nächstes soll die Methodik der Evaluation (siehe Kap. 4.3) angewandt werden. Dazu sollen zunächst die Ziele und der Aufbau der Evaluation definiert werden. Da es sich hierbei um eine empirische Evaluation handelt, werden Daten mittels geeigneter Methoden erhoben. Diese Methoden werden nachfolgend ausgewählt und genauer beschrieben.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Ziel und Aufbau}
+Ziel dieser Evaluation ist es, zwei Benutzerschnittstellen hinsichtlich ihrer Performance und Ergonomie zu vergleichen. Dabei sind der neu entworfene Dialog aus dem vorherigen Abschnitt \enquote{Erarbeitung der Gestaltungslösung} (siehe Abb. \ref{fig:neuerDialog}), der bereits konzipiert und implementiert wurde und der aktuell im produktiven Einsatz genutzte Dialog für Vermögensverzeichnisse (siehe Abb. \ref{fig:aktuellerDialog}) Gegenstand des Vergleichs. Das Ziel der Evaluation ist bewusst an die Forschungsfrage angelehnt, denn die Evaluation soll später zur Beantwortung bzw. Überprüfung der Forschungsfrage sowie der Hypothesen benutzt werden.
+
+Der Aufbau der Evaluation wird sich in fünf Phasen gliedern. Die erste Phase beschäftigt sich mit generellen Planungstätigkeiten, zu denen auch die Definition des Ziels sowie der Untersuchungsgegenstände zählt. In der darauf folgenden Phase wird die Stichprobe und die Erhebungsmethoden und Messinstrumente für die Erhebung ausgewählt. Anschließend werden in der dritten Phase zum einen die Erhebungsmethoden auf die Stichprobe angewandt und zum anderen, als zusätzliches Kriterium für die Beurteilung, eine \gls{KNA} durchgeführt. In der letzten Phase werden dann alle Datensätze und Erkenntnisse ausgewertet, um schließlich auf die Forschungsfrage und die Hypothesen einzugehen (siehe Kap. 7).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Empirische Erhebung}
+Zunächst sollen geeignet Verfahren und eine repräsentative Stichprobe für die Datenerhebung bestimmt werden. Diese werden dann im zweiten Schritt angewandt.
 
-\subsubsection{Erhebungsmethoden und Messinstrumente}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection{Auswahl der Stichprobe}
+Damit im nächsten Schritt eine Auswahl von Probanden für die Erhebungen geschehen kann, muss zu aller erst definiert werden welche und bestenfalls wie viele Personen die Gesamtheit darstellen. Da es sich bei der Evaluation, um die Bewertung der Benutzerschnittstelle für Vermögensauskünfte handelt, zählen alle Personen zur Gesamtheit, dessen tägliche Arbeit mit dem Anwendungsfall \enquote{Eingabe eines Vermögensverzeichnisses} zu tun hat. Das heißt jeder Sachbearbeiter der getrieben durch seine Aufgaben, die Oberfläche für Vermögensauskünfte, zur Eingabe eines neuen Vermögensverzeichnisses benutzt ist potentieller Teil der Grundgesamtheit. In Zahlen ausgedrückt sind dies mehrere hundert Personen. Genaue Zahlen sind sehr schwierig zu ermitteln, daher wird für nachfolgende Aussagen und Rechnungen von einer gerundeten Grundgesamtheit von etwa ??? Personen ausgegangen.
 
+Bei der Auswahl der Stichprobe wird auf eine Kombination der bewussten Auswahl und der Zufallsziehung gesetzt. Es liegt keine vollständig zufällige Stichprobe vor, da bereits ein Benutzerprofil in Kapitel 5.2.1 erstellt wurde und dies als Wissensgrundlage durchaus genutzt werden kann. Zudem wird eine Art mehrstufige Zufallswahl durchgeführt. Diese hat den Vorteil, dass man sicher aus jeder Kategorie bzw. Abteilung einen Teil der Stichprobe zieht und nicht wie bei einer reinen Zufallsziehung eventuell nur aus einer Abteilung Probanden bekommt. Dadurch erhöht sich die Repräsentativität der Stichprobe. Die Gruppen aus denen die Teilnehmer gezogen werden sind die Abteilungen in denen die schriftliche Sachbearbeitung den oben genannten Anwendungsfall bearbeiten. Die Stichprobe setzt sich wie folgt zusammen:
+\begin{itemize}
+    \item Es sind insgesamt 83 Probanden.
+    \item Die Probanden sind in absoluten Zahlen nicht gleichstark aus jeder Abteilung vertreten, da die Team bzw. Abteilungsgrößen variieren. Es ist aber davon auszugehen das relativ gesehen die Abteilungen in etwa die gleiche Gewichtung in der Stichprobe aus machen.
+    \item Aufgrund der Urlaubsplanungen, ist mit Schwankungen in der Anwesenheit zu rechnen, daher werden nie alle 83 Sachbearbeiter zu einer Zeit präsent sein.
+\end{itemize}
 
-\textbf{Messinstrument zur Logfile-Erhebung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Als Vorbereitung auf die empirische Datenerhebung gilt es eine Möglichkeit zu schaffen, mit der Daten, die bei Mensch-System-Interaktionen entstehen, automatisch gesammelt werden. Für die Logfile-Erhebung (vgl. Kap. \ref{sec:erhebungsmethoden}) wurde speziell ein Tool entwickelt, das den internen Namen UIDataCollector trägt. Dieses Tool wurde speziell für das Sammeln von Bewegungsdaten bzw. Interaktionsdaten, in der Cosima Oberfläche, konzipiert. Das Tool soll die Grundlage für eine objektive Logfile-Erhebung zur Verfügung stellen.
+\subsubsection{Auswahl der Erhebungsmethoden und Messinstrumente}
+Im folgenden sollen die angewandten Erhebungsmethoden und dessen Messinstrumente genauer vorgestellt werden. Bei der Auswahl der Erhebungsmethoden und Messinstrumente wurden bewusst zwei Methoden ausgewählt, um die Genauigkeit und Aussagekraft der Ergebnisse zu erhöhen.
+
+\textbf{Logfile-Erhebung}
+
+Als erstes Verfahren und gleichzeitig als zuerst durchgeführtes Verfahren wird die Logfile-Erhebung (siehe Kap. \ref{sec:erhebungsmethoden}) gewählt. Diese eignet sich besonders gut, da viele Daten über das Verhalten der Benutzer im jeweiligen Dialog gesammelt werden können. Die Methodik wird besonders mit dem Ziel der Zeitmessung eingesetzt. Zusätzlich soll es als Vergleich Informationen über Tastatur und Maus Interaktionen sammeln, damit später ein Vergleich dieser beiden Interaktionsarten stattfinden kann. Da der Blickpunkt der Evaluation auf der Ergonomie und Effizienz der Dialoge liegt, sind Zeiten und das Interaktionsverhalten gute Referenzwerte, um Aussagen zu diesen zwei Kriterien treffen zu können.
+
+Für die Logfile-Erhebung gilt es eine Möglichkeit zu schaffen, mit der Daten, die bei Mensch-System-Interaktionen entstehen, automatisch zu sammeln. Für die Logfile-Erhebung wurde speziell ein Tool entwickelt, das den internen Namen UIDataCollector (im Folgenden nur noch UIDC) trägt. Dieses Tool wurde speziell für das Sammeln von Bewegungsdaten bzw. Interaktionsdaten, in der Cosima Oberfläche, konzipiert. Der UIDC soll die Grundlage für eine objektive Datenerhebung zur Verfügung stellen.
 
 Das Tool, das Daten für eine Erhebung, in Form von Datensätzen sammelt, hat gewisse Anforderungen, die erfüllt werden müssen:
 \begin{compactitem}
@@ -19,20 +43,30 @@ Das Tool, das Daten für eine Erhebung, in Form von Datensätzen sammelt, hat ge
    \item Das Sammeln von Interaktionen kann auf eine gewisse Benutzergruppe und auf gewisse Dialoge eingeschränkt werden.
 \end{compactitem}
 
-\textbf{Datenbankmodell}
+Die Datenhaltung für die Interaktionsdaten basiert auf zwei Datenobjekten in denen alle nötigen Informationen gespeichert werden. Es gibt Session-Objekte und Interaktions-Objekte. Ein Session-Objekt beschreibt genau eine Session und dessen Interaktionen. Eine Session startet beim Öffnen eines Dialoges und endet beim Schließen des selben Dialoges. Dabei können innerhalb einer Session mehrere Interaktionen stattfinden. Eine Interaktion ist immer klar einer Session zugeordnet und bekommt über diese eine Eindeutigkeit. Zudem kann eine Interaktion immer nur zusammen mit einer Session aber nicht alleine existieren. Die Datenhaltungsobjekte mit ihren Attributen und Beziehungen zueinander werden als \gls{ERM} im Anhang \ref{sec:ermUIDataCollector} veranschaulicht.
 
-Die Datenhaltung für die Interaktionsdaten basiert auf zwei Datenobjekten in denen alle nötigen Informationen gespeichert werden. Es gibt Session-Objekte und Interaktion-Objekte. Ein Session-Objekt definiert sich über die Zeitspanne die sich vom Öffnen bis zum Schließen eines Dialoges erstreckt. Dabei können innerhalb einer Session mehrere Interaktionen stattfinden. Eine Interaktion ist immer klar einer Session zugeordnet und bekommt über diese eine Eindeutigkeit. Die Datenhaltungsobjekte und ihre Beziehung zueinander werden in Abbildung \ref{fig:ermUIDataCollector} veranschaulicht.
-\begin{figure}[H]
-  \centering
-  \includegraphics[]{img/ERM_UIDataCollector.PNG}
-  \caption{Entity Relationship Model des UIDataCollectors nach Barker Notation \citep[vgl.][]{Inguanez2012}}
-  \label{fig:ermUIDataCollector}
-  \caption*{\textbf{Quelle:} eigene Darstellung}
-\end{figure}
-Zudem kann eine Interaktion immer nur zusammen mit einer Session aber nicht alleine exisitieren.
+\textbf{Befragung via Fragebogen}
 
+Die zweite Erhebung soll durch eine Befragung via standardisierten Fragebogen erfolgen. Der standardisierte Fragebogen ist der in Kapitel \ref{sec:erhebungsmethoden} vorgestellte ISO 9241-10. Der Fragebogen dient als abschließendes Resümee nach den Benutzungstests inklusive Logfile-Erhebung. Nach dem die Benutzer den neuen Dialog zwei Wochen getestet haben bekommen sie den Fragebogen ausgehändigt, um ihre persönlichen Eindrücke und Erfahrungen zum neuen Dialog für Vermögensverzeichnisse festzuhalten.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Durchführung}
+Die Durchführung der beiden Erhebungsmethoden soll sequentiell erfolgen. Das heißt, dass erst die Logfile-Erhebung durchgeführt wird und anschließend Fragebögen ausgefüllt werden. Die Logfile-Daten zum neuen Dialog werden über einen Zeitraum von zwei Wochen gesammelt. In der Zeit sollen die Teilnehmer im Produktivbetrieb ausschließlich mit dem neuen Dialog arbeiten. Damit der neue Dialog mit dem alten Dialog verglichen werden kann wurden zuvor bereits zwei Wochen lang Lofile-Daten zum alten Dialog gespeichert. 
 
-\subsection{Durchführung der Kosten-Nutzen-Analyse}
+Vorab wurde den Teilnehmern eine ausführliche Anleitung mit Bildern und Funktionen der neuen Benutzerschnittstelle zugeschickt. Diese Anleitung sollte den Anwendern die Möglichkeit geben erste Eindrücke zu gewinnen und vor Beginn des Testzeitraums Fragen zu stellen, damit während der Testphase möglichst unbeschwert mit dem neuen Dialog gearbeitet werden kann. Zudem wurden die Probanden im Vorhinein zu gewissen rechtlichen Datenschutzaspekten aufgeklärt und zu ihrer Einwilligung dieser gebeten.
+
+Im Anschluss an die Interaktionsdaten der alten sowie neuen Benutzerschnittstelle bekommen die Teilnehmer den ISO 9241-110 Fragebogen ausgehändigt und sollen diesen ausfüllen. Es wurde beim verteilen der Fragebögen drauf hingewiesen, dass auch nur die Personen die den neuen Dialog produktiv verwenden konnten den Fragebogen ausfüllen sollen. Es sollen falsche Einschätzungen ausgeschlossen werden. Die Fragebögen wurden nach Ablauf der Frist eingesammelt und werden im Teil \ref{sec:auswertungDerFrageboegen} ausgewertet.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Kosten-Nutzen-Analyse zur Ist-Situation}
+Als weiterer Parameter in der Evaluation soll eine abgewandelte Version der \gls{KNA} hinzugezogen werden. Diese soll lediglich als Anhaltspunkt für die Wirtschaftlichkeit des Projektes dienen und wird keinesfalls als alleiniges Indiz für die gesamte Bewertung ausreichen. Zu Beginn des Projektes wurden gewisse Annahmen zu fixen Kosten und Aufwänden getroffen.
+
+Für die Kosten, die im Zusammenhang mit der Projektphase entstanden sind wurden folgende Werte berechnet:
+\begin{center}
+\begin{longtable}{|p{5.1cm}|p{9.5cm}|} 
+\hline
+\textbf{Kostenpunkt} & \textbf{Beschreibung} \\ \hline
+\end{longtable}
+\end{center}
