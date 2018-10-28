@@ -38,7 +38,7 @@
 %%
 %% Für die finale Version auskommentieren!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fancyhead[L]{\color{red} Stand: \today~-~\currenttime}
+%\fancyhead[L]{\color{red} Stand: \today~-~\currenttime}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Verzeichnisse
@@ -51,8 +51,14 @@
 % Inhaltsverzeichnis
 \tableofcontents\newpage
 
+
 % Abkürzungsverzeichnis
-\printglossary[type=\acronymtype, style=mylist, title=Abkürzungsverzeichnis, toctitle=Abkürzungsverzeichnis]\newpage
+\printglossary[  type     = \acronymtype
+               , style    = mylist
+               , title    = Abkürzungsverzeichnis
+               , toctitle = Abkürzungsverzeichnis]
+\newpage
+
 \setcounter{table}{0} % printglossary erzeugt eine Tabelle, die die Nummerierung der "echten" Tabellen durcheinander bringt. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,8 +74,8 @@
 \listoftables\newpage
 
 % Quelltextverzeichnis
-\fancyhead[R]{\lstlistlistingname}
-\lstlistoflistings\newpage
+%\fancyhead[R]{\lstlistlistingname}
+%\lstlistoflistings\newpage
 
 % Kapitelüberschriften für den Arbeitstext
 \fancyhead[R]{\leftmark}

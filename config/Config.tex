@@ -224,20 +224,30 @@ final             % draft beschleunigt die Kompilierung
 % Links im PDF
 \usepackage[pdfpagemode={UseOutlines}, plainpages=false,breaklinks=true,pdfpagelabels]{hyperref}
 
- % Abkürzungsverzeichnis
-\usepackage[acronym,         % create list of acronyms
-            nonumberlist,
-            toc, 
-            section,
-            nomain,          % don't need main glossary for this example
-            hyperfirst=false,% don't hyperlink first use
-            sanitize=none    % switch off sanitization as description
-            ]{glossaries}
-            \newglossarystyle{mylist}{%
-\glossarystyle{long}% base this style on the list style
-\renewcommand*{\glossaryentryfield}[5]{%
-    \glsentryitem{##1}\textbf{##2} & ##3 \\}%
+% Abkürzungsverzeichnis
+\usepackage[  %acronym
+              nonumberlist
+            , toc
+            , section
+            , hyperfirst = false
+            , sanitize   = none]
+{glossaries}
+
+%\usepackage[acronym,         % create list of acronyms
+%            nonumberlist,
+%            toc, 
+%            section,
+%            nomain,          % don't need main glossary for this example
+%            hyperfirst=false,% don't hyperlink first use
+%            sanitize=none    % switch off sanitization as description
+%            ]{glossaries}
+
+\newglossarystyle{mylist}{%
+    \glossarystyle{long}% base this style on the list style
+    \renewcommand*{\glossaryentryfield}[5]{%
+       \glsentryitem{##1}\textbf{##2} & ##3 \\%
+     }%
 }
 
 \input{config/Abkuerzungen}
-\makeglossaries\makeglossaries 
+\makeglossaries
