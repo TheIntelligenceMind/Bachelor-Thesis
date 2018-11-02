@@ -3,9 +3,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Eingesetzte Technologien und Programme}
-Unter den Technologien, die in dem Projekt Verwendung finden, befindet sich für die Implementierungsarbeiten die Programmiersprache Java, sowie deren Standardbibliotheken für die Enwticklung von grafischen Benutzeroberflächen. Als standardisierte und integrierte Entwicklungsumgebung wird Eclipse Neon eingesetzt. Im Bereich der Datenauswertung und der grafischen Aufbereitung von Daten kommen die Programme Excel, Word, Visio und Outlook als Teil der Microsoft Office Suite, zum Einsatz. 
+Unter den Technologien, die in dem Projekt Verwendung finden, befindet sich für die Implementierungsarbeiten die Programmiersprache Java, sowie deren Standardbibliotheken für die Enwticklung von grafischen Benutzeroberflächen. Als standardisierte und integrierte Entwicklungsumgebung wird Eclipse Neon eingesetzt. Im Bereich der Datenauswertung, Textbearbeitung, Kommunikation und grafischen Aufbereitung von Daten, kommen die Programme Excel, Word, Outlook und Visio als Teil der Microsoft Office Suite, zum Einsatz. 
 
-Für alle datenbankspezifischen Tätigkeiten wird die Datenbanksprache Oracle SQL mit dem Oracle eigens entwickelten Datenbankmanagement Programm SQL-Developer verwendet. Das auf einer grafischen Benutzeroberfläche basierende Tool, ist speziell zur Ausführung von Oracle SQL-Queries entwickelt worden. Mit der eingebetteten Autovervollständigung und Syntax Überprüfung lassen sich relativ einfach und unkompliziert verschachtelte Datenbankabfragen erstellen und ausführen. Die ausgeführten Abfragen werden anschließend innerhalb einer Ausgabekonsole tabellarische dargestellt. Zusätzlich bietet der SQL-Developer eine übersichtliche Möglichkeit Datenbankstrukturen zu verwalten. 
+Für alle datenbankspezifischen Tätigkeiten wird die Datenbanksprache Oracle SQL mit dem Oracle eigens entwickelten Datenbankmanagement Programm SQL-Developer verwendet. Das auf einer grafischen Benutzeroberfläche basierende Tool, ist speziell zur Ausführung von PL/SQL entwickelt worden. Die ausgeführten Abfragen werden anschließend innerhalb einer Ausgabekonsole tabellarische dargestellt. Zusätzlich bietet der SQL-Developer eine übersichtliche Möglichkeit Datenbankstrukturen zu verwalten. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -16,9 +16,9 @@ Zunächst soll der Begriff der Software-Ergonomie genauer erläutert werden. Ans
 
 \subsubsection{Begriffsdefinition}
 \begin{quote}
-    Die Software-Ergonomie hat es sich zur Aufgabe gemacht, die Merkmale benutzer- und aufgebengerechter Software zu erforschen und konstruktive Verfahren sowie Softwareunterstützungen für den Prozeß der Gestaltung von Benutzungsschnittstellen zu entwickeln. Ihr zentrales Anliegen ist die Optimierung des Zusammenspiels aller Komponenten der Arbeitssituation von Computerbenutzern: Mensch, Aufgabe, Technik und organisatorischer Rahmen.\footnote{\cite{Maass1993}}
+    \enquote{Die Software-Ergonomie hat es sich zur Aufgabe gemacht, die Merkmale benutzer- und aufgebengerechter Software zu erforschen und konstruktive Verfahren sowie Softwareunterstützungen für den Prozeß der Gestaltung von Benutzungsschnittstellen zu entwickeln. Ihr zentrales Anliegen ist die Optimierung des Zusammenspiels aller Komponenten der Arbeitssituation von Computerbenutzern: Mensch, Aufgabe, Technik und organisatorischer Rahmen.}\footnote{\cite[191]{Maass1993}}
 \end{quote}
-Eine relativ allgemeine aber trotzdem sehr treffende und umfassende Definition von Software-Ergonomie, wurde durch die Authorin Dr. Susanne Maaß 1993 veröffentlicht. 
+Diese relativ allgemeine aber trotzdem sehr treffende und umfassende Definition von Software-Ergonomie, wurde durch die Authorin Dr. Susanne Maaß 1993 veröffentlicht. 
 
 Neben der Beschreibung von Dr. Susanne Maaß, gibt es noch viele weitere Definitionen darunter auch die von Stefano Nocentini, veröffentlicht in einem der Werke von Reinhard Oppermann. Software-Ergonomie ist die \enquote{ability of a software system to interact easily and effectively with the user in order to fulfil his/her needs and expectations}\footnote{\cite[4]{Oppermann1988einfuehrung}}, also die Fähigkeit einer Software einfach und effektiv mit einem Benutzer zu interagieren und dabei dessen Anforderungen und Erwartungen zu erfüllen. Das Ergebnis aus der Software-Ergonomie ist die Usability also die Gebrauchstauglichkeit einer Software. Sie ist besonders dort wichtig, wo Menschen mit Maschinen über Schnittstellen arbeiten\footnote{\cite[vgl.][]{usabilityDe}}. Die Usability ist der Zusammenschluss von Effektivität, Effizienz und Zufriedenheit. Effektivität beschreibt die Erreichung und das Ausmaß von Zielen. Effizienz stellt den Aufwand für die Erledigung des Ziels dar. Die Zufriedenheit spiegelt subjektive Faktoren wie \enquote{joy of use}, \enquote{look and feel} und \enquote{motivation and fun} wider\footnote{\cite[vgl.][]{Holzinger2011human}}. Die Zufriedenheit wird auch als \gls{UX} bezeichnet, die als Erweiterung der Gebrauchstauglichkeit gesehen wird, da sie ästhetische und emotionale Faktoren mit einbezieht\footnote{\cite[vgl.][]{usabilityDe}}. Die Software-Ergonomie gehört neben der Hardware-Ergonomie und Organisations-Ergonomie zu den drei ergonomischen Disziplinen. Auch die Software-Ergonomie selbst lässt sich in drei weitere Bereiche aufteilen: Korrektheits-Ergonomie, Funktionalitäts-Ergonomie und Schnittstellen-Ergonomie\footnote{\cite[vgl.][]{Oppermann1988einfuehrung}}.
 
@@ -26,16 +26,16 @@ Neben der Beschreibung von Dr. Susanne Maaß, gibt es noch viele weitere Definit
 
 \subsubsection{Gestaltgesetze}
 \label{sec:gestaltgesetze}
-In der Vergangenheit wurden durch interdisziplinären Ansätze verschiedene Gestaltgesetze entwickelt, die als Hilfestellung bei der Entwicklung von grafischen Benutzerschnittstellen dienen sollen. Gestalt bedeutet dabei soviel wie die automatische Zusammenfassung bzw. Gruppierung von Objekten\footnote{\cite[vgl.][59]{Dahm2006}}. Bei der Beobachtung von Bildern und Grafiken werden unterbewusst gewisse Muster und Gruppen aus einzelnen Elementen gebildet. Diese Muster und Gruppen lassen sich in einige wichtige Gestaltgesetze abstrahieren, die schon 1923 von drei Forschern beobachtet und niedergeschrieben wurden. Die Gestaltsgesetze können für das Gruppieren und Abgrenzen von Elementen untereinander verwendet werden, um eine höhere Ästhetik bzw. Übersichtlichkeit zu erzielen. Im Folgenden werden exemplarisch drei der wichtigsten und zugleich die drei, für das Projekt, am stärksten berücksichtigten Gestaltgesetze vorgestellt.
+In der Vergangenheit wurden durch interdisziplinären Ansätze verschiedene Gestaltgesetze entwickelt, die als Hilfestellung bei der Entwicklung von grafischen Benutzerschnittstellen dienen sollen. Gestalt bedeutet dabei soviel wie die automatische Zusammenfassung bzw. Gruppierung von Objekten\footnote{\cite[vgl.][59]{Dahm2006}}. Bei der Beobachtung von Bildern und Grafiken werden unterbewusst gewisse Muster und Gruppen aus einzelnen Elementen gebildet. Diese Muster und Gruppen lassen sich in einige wichtige Gestaltgesetze abstrahieren, die schon 1923 von drei Forschern beobachtet und niedergeschrieben wurden. Die Gestaltsgesetze können für das Gruppieren und Abgrenzen von Elementen untereinander verwendet werden, um eine höhere Ästhetik und Übersichtlichkeit zu erzielen. Im Folgenden werden exemplarisch drei der wichtigsten und zugleich die drei, für das Projekt, am stärksten berücksichtigten Gestaltgesetze vorgestellt.
 
 \textbf{Gesetz der Ähnlichkeit}
 
 Wie in Abbildung \ref{fig:aehnlichkeit} zu sehen ist, werden ähnliche Objekte zusammengefasst. Für den Betrachter gruppieren sich die grauen und blauen Elementen und er nimmt Spalten wahr.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=1]{img/gesetz_der_Aehnlichkeit.PNG}
+  \includegraphics[scale=0.8]{img/gesetz_der_Aehnlichkeit.PNG}
   \caption{Ähnliche Objekte werden zusammengefasst.}
-    \caption*{\textbf{Quelle:}\footnote{\cite{Dahm2006}}}
+    \caption*{\textbf{Quelle:} \cite[59]{Dahm2006}}
   \label{fig:aehnlichkeit}
 \end{figure}
 Für die Ähnlichkeit sind die Farbe, die Helligkeit, die Form, das Muster und noch weitere Kriterien von Bedeutung\footnote{\cite[vgl.][59f]{Dahm2006}}. Je mehr Kriterien Elemente gemeinsam haben, desto höher ist dessen Ähnlichkeit und desto eher werden Elemente als Gruppe gesehen\footnote{\cite[vgl.][]{HTMLSeminarDe}}.
@@ -45,9 +45,9 @@ Für die Ähnlichkeit sind die Farbe, die Helligkeit, die Form, das Muster und n
 Das Gesetz der Nähe beschreibt die Zusammengehörigkeit von Elementen durch ihre Nähe zueinander.
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=1]{img/gesetz_der_Naehe.PNG}
+  \includegraphics[scale=0.9]{img/gesetz_der_Naehe.PNG}
   \caption{Abstände zwischen Objekten erzeugen eine Zusammengehörigkeit.}
-    \caption*{\textbf{Quelle:}\footnote{\cite{Dahm2006}}}
+    \caption*{\textbf{Quelle:}\cite[60]{Dahm2006}}
   \label{fig:naehe}
 \end{figure}
 In der Abbildung \ref{fig:naehe} ist zu erkennen, dass die Elemente trotz unterschiedlicher Formen und Farben  nicht als Spalten, sondern als Zeilen, wahrgenommen werden. Dieser Effekt resultiert aus dem dominanten Merkmal der Nähe von Objekten. Die Nähe erzielt bei der Anordnung von Elementen einen noch stärkeren Effekt als die Ähnlichkeit\footnote{\cite[vgl.][60]{Dahm2006}}.
@@ -58,9 +58,9 @@ In der Abbildung \ref{fig:naehe} ist zu erkennen, dass die Elemente trotz unters
 Das Gesetz der Vertrautheit beschreibt ein Phänomen, bei dem der Betrachter vertraute bzw. bekannte Formen immer wieder erkennt. Dafür sieht er aber nicht mehr die Bestandteile aus denen die Form entstanden ist.\footnote{\cite[vgl.][63f]{Dahm2006}}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.7]{img/gesetz_der_Vertrautheit.PNG}
+  \includegraphics[scale=0.62]{img/gesetz_der_Vertrautheit.PNG}
   \caption{Vertraute Formen bleiben beim Betrachter erhalten.}
-  \caption*{\textbf{Quelle:}\footnote{\cite{Dahm2006}}}
+  \caption*{\textbf{Quelle:}\cite[63]{Dahm2006}}
   \label{fig:vertrautheit}
 \end{figure}
 In Abbildung \ref{fig:vertrautheit} sieht der Betrachter auf den ersten Blick viele wahllos verstreute schwarze Flecken auf einem weißen Hintergrund. Wird nun die Erfahrung des Betrachters mit Informationen zu diesem Bild angereichert, wird er zukünftig diese Erfahrungen automatisch immer wieder abrufen. Dabei wird es unmöglich sein, diese Erfahrungen bewusst zu unterdrücken. In der Abbildung ist in der rechten Bildhälfte ein herabschauender Dalmatiner zu sehen. Von vielen Personen wird der Dalmatiner durch bloßes hinschauen nicht wahrgenommen. Sobald der Betrachter einmal den Dalmatiner entdeckt hat, wird er nie wieder nur wahllose Flecken sehen können.\footnote{\cite[vgl.][63f]{Dahm2006}}
@@ -73,14 +73,13 @@ Zu der Gestaltung und Anordnung von Elementen, gibt es eine Vielzahl von Normen 
 
 \textbf{Normen}
 
-Einer dieser Software-Ergonomie Normen ist die \gls{EN} \gls{ISO} 9241. Diese wurde in ihrer ersten Auflage 1996 durch das \gls{DIN} veröffentlicht. Seitdem sind die Anforderungen und technischen Möglichkeiten immer weiter gewachsen. In dem Zuge wurde die Norm 2008 in einer überarbeiteten Fassung herausgegeben. Dabei wurden konkretere Beispiele und Empfehlungen vervielfältigt, der Nutzungskontext, der zuvor nur mit dem Blick auf PC'S gerichtet war, erweitert und zusätzlich andere Normen mit einbezogen.\footnote{\cite[vgl.][]{Schneider2008}}
+Einer dieser Software-Ergonomie Normen ist die \gls{EN} \gls{ISO} 9241. Diese wurde in ihrer ersten Auflage 1996 durch das \gls{DIN} veröffentlicht. Seitdem sind die Anforderungen und technischen Möglichkeiten immer weiter gewachsen. In dem Zuge wurde die Norm 2008 in einer überarbeiteten Fassung herausgegeben. Dabei wurden konkretere Beispiele und Empfehlungen vervielfältigt, der Nutzungskontext, der zuvor nur mit dem Blick auf PC's gerichtet war, erweitert und zusätzlich andere Normen mit einbezogen.\footnote{\cite[vgl.][]{Schneider2008}}
 
 Der Begriff Gebrauchstauglichkeit wird in der Norm 9241-110 mit den drei Merkmalen Effektivität, Effizienz und Zufriedenheit aus der Norm 9241-11 definiert. Zudem wird im Kapitel 6 des Normteils 110 (ehemals Teil 10) die Verbindung der sieben Gestaltungsgrundsätze für ergonomische Benutzerschnittstellen (s. Tabelle \ref{tab:siebenGrundprinzipien}), aus EN ISO 9241-110 und EN ISO 9241-12, zu der Gebrauchstauglichkeit aus EN ISO 9241-11 hergestellt. Denn durch die Anwendung der sieben Grundsätze soll die Gebrauchstauglichkeit unterstützt werden.\footnote{\cite[vgl.][Kap. 6]{ISO9241-110}}
 
 Wie in der Tabelle \ref{tab:siebenGrundprinzipien} zu erkennen ist, wurden die einzelnen Grundprinzipien in ihren Beschreibungen möglichst generisch formuliert. Ein Grund dafür ist, dass die Grundsätze unabhängig vom betrachtenden Softwaresystem angewandt werden sollen. Die Grundsätze können bei der Konzeption, Analyse und Bewertung von Dialogen angewandt werden, sollen aber keine Vorgaben an die Entwicklung von interaktiven Systemen stellen.\footnote{\cite[vgl.][Kap. 4.1]{ISO9241-110}}
-\pagebreak
 \begin{center}
-\begin{longtable}{|p{5.1cm}|p{9.5cm}|} 
+\begin{longtable}{|p{5.1cm}|p{9.56cm}|} 
 \hline
 \textbf{Grundprinzip} & \textbf{Beschreibung} \\ \hline
 Aufgabenangemessenheit & Ein interaktives System ist aufgabenangemessen, wenn es den Benutzer unterstützt, seine Arbeitsaufgabe zu erledigen, d.h., wenn Funktionalität und Dialog auf den charakteristischen Eigenschaften der Arbeitsaufgabe basieren, anstatt auf der zur Aufgabenerledigung eingesetzten Technologie. \\ \hline
@@ -89,7 +88,10 @@ Erwartungskonformität & Ein Dialog ist erwartungskonform, wenn er den aus dem N
 Lernförderlichkeit & Ein Dialog ist lernförderlich, wenn er den Benutzer beim Erlernen der Nutzung des interaktiven Systems unterstützt und anleitet. \\ \hline
 Steuerbarkeit & Ein Dialog ist steuerbar, wenn der Benutzer in der Lage ist, den Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu beeinflussen bis das Ziel erreicht ist. \\ \hline
 Fehlertoleranz & Ein Dialog ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers erreicht werden kann. Fehlertoleranz wird mit den Mitteln erreicht: 
-\begin{itemize}\itemsep0pt
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{3pt}
+  \setlength{\parsep}{2pt}
   \item Fehlererkennung und -vermeidung (Schadensbegrenzung)
   \item Fehlerkorrektur oder
   \item Fehlermanagement, um mit Fehlern umzugehen, die sich ereignen.
@@ -105,15 +107,15 @@ Im Abschnitt 12 der ISO Norm 9241 werden die charakteristischen Eigenschaften de
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.80]{img/Beziehung_ISO9241_ISO9241-11_ISO9241-12.png}
-  \caption{Beziehung zwischen ISO 9241, ISO 9241-11 und ISO 9241-12 in Anlehnung an \citep[]{ISO9241-110}.}
-  \caption*{\textbf{Quelle:} Eigene Darstellung}
+  \caption{Beziehung zwischen ISO 9241, ISO 9241-11 und ISO 9241-12.}
+  \caption*{\textbf{Quelle:} Eigene Darstellung \citep[vgl.][]{ISO9241-110}}
   \label{fig:beziehungIsoNormen}
 \end{figure}
 Eine weitere Norm im Bereich der Software-Ergonomie, auf die im Abschnitt 3.6 in der ISO 9241-110 Norm verwiesen wird, ist die DIN EN ISO 13407 (Benutzerorientierte Gestaltung interaktiver Systeme). Diese Norm ist als Ergänzung des Teils 110, im Bereich des Projektmanagements und der Vorgehensweisen, anzusehen\footnote{\cite[vgl.][58]{Schneider2008}}.
 
 \textbf{Richtlinien}
 
-Zu den Richtlinien, die man bei der Software-Ergonomie berücksichtigen sollte, gehören auch die Styleguides eines Unternehmens dazu. Dabei wird zwischen internen und externen Richtlinien unterschieden\footnote{\cite[vgl.][74]{Richter2013}}. Das Ziel dieser Styleguides ist es Systeme zu vereinheitlichen, indem gewisse Rahmenbedingungen festgelegt werden\footnote{\cite[vgl.][]{Sarodnick2011}}. Sie enthalten Vorgaben zum Aussehen und Verhalten von Bedienelementen, im jeweiligen Kontext\footnote{\cite[vgl.][72]{Richter2013}}. Jedes Unternehmen sollte gewisse Standards verfolgen, damit eine einheitliche und konsistente Weiterentwicklung und Benutzung der Software gewährleistet ist.
+Zu den Richtlinien, die man bei der Software-Ergonomie berücksichtigen sollte, gehören auch die Styleguides eines Unternehmens. Dabei wird zwischen internen und externen Richtlinien unterschieden\footnote{\cite[vgl.][74]{Richter2013}}. Das Ziel dieser Styleguides ist es Systeme zu vereinheitlichen, indem gewisse Rahmenbedingungen festgelegt werden\footnote{\cite[vgl.][]{Sarodnick2011}}. Sie enthalten Vorgaben zum Aussehen und Verhalten von Bedienelementen, im jeweiligen Kontext\footnote{\cite[vgl.][72]{Richter2013}}. Jedes Unternehmen sollte gewisse Standards verfolgen, damit eine einheitliche und konsistente Weiterentwicklung und Benutzung der Software gewährleistet ist.
 
 Der Vorteil von Styleguides liegt darin, dass dem Entwickler gewisse Denkprozesse bei der Auseinandersetzung mit Oberflächen durch die Styleguides abgenommen werden. Ebenso dienen sie auch gleichzeitig als eine Art Checkliste für den Entwickler\footnote{\cite[vgl.][214]{Thomaschewski2013}}.
 
@@ -131,18 +133,21 @@ Ein Zusammenhang des Gesetztes mit dem Thema Ergonomie wird deutlich, wenn man s
 
 \subsubsection{Heuristiken der Gebrauchstauglichkeit}
 \label{sec:heuristikenDerGebrauchstauglichkeit}
-Auf dem Gebiet der Usability von Benutzerschnittstellen und der Interaktion mit Schnittstellen, sind die Informatik Professoren Ben Shneidermann und Don Norman und der Usability Berater Dr. Jakob Nielsen, eine renommierte Referenz\footnote{\cite[vgl.][]{Wong2018}}. Ihre Vielzahl an Werken werden gerne als Referenz genutzt und ihre Erkenntnisse im Gebiet der Software-Ergonomie sind durchaus anerkannt. Diese praktikablen Ansätze und Vorgehensweisen für die Evaluation von ergonomischen Benutzerschnittstellen werden Usability Heuristiken genannt. Heuristiken sind Methoden, die auf überlieferten Verhaltensweisen und Erfahrungen basieren und dabei helfen komplexe Probleme zu lösen\footnote{\cite[vgl.][]{Heuristik2018}}. Im folgenden werden 10 Usability Heuristiken von Dr. Jakob Nielsen vorgestellt.
+Auf dem Gebiet der Usability von Benutzerschnittstellen und der Interaktion mit Schnittstellen, sind die Informatik Professoren Ben Shneidermann und Don Norman und der Usability Berater Dr. Jakob Nielsen, eine renommierte Referenz\footnote{\cite[vgl.][]{Wong2018}}. Ihre Vielzahl an Werken werden gerne als Referenz genutzt und ihre Erkenntnisse im Gebiet der Software-Ergonomie sind durchaus anerkannt. Diese praktikablen Ansätze und Vorgehensweisen für die Evaluation von ergonomischen Benutzerschnittstellen werden Usability Heuristiken genannt. Heuristiken sind Methoden, die auf überlieferten Verhaltensweisen und Erfahrungen basieren und dabei helfen komplexe Probleme zu lösen\footnote{\cite[vgl.][]{Heuristik2018}}. Im folgenden werden 10 Usability Heuristiken von Dr. Jakob Nielsen genannt.
 \begin{itemize}
-    \item Das System sollte dem Anwender immer wieder den aktuellen Status mitteilen \citep[vgl.][]{Nielsen1995}.
-    \item Die Sprache und Ausdrucksweise des Systems sollte zu dem des Anwenders passen. Dazu zählt auch, dass Informationen in realen und logischen Reihenfolgen dargestellt werden \citep[vgl.][]{Nielsen1995}.
-    \item Der Anwender sollte die Möglichkeit haben Aktionen zu widerrufen und erneut auszuführen. Bei kritischen Aktionen sollte erst nach einer Bestätigung der Status eines Dialoges gewechselt werden \citep[vgl.][]{Nielsen1995}.
-    \item Die Konventionen für Syntax und Semantik sollten systemweit einheitlich eingehalten werden \citep[vgl.][]{Nielsen1995}.
-    \item Das System sollte so konzipiert sein, dass es keine Fehlermeldungen zulässt \citep[vgl.][]{Nielsen1995}.
-    \item Wichtige Informationen sollte jederzeit im System einsehbar sein. Hilfen zur Handhabung des Systems sollten leicht zugänglich sein \citep[vgl.][]{Nielsen1995}.
-    \item Das System sollte sowohl für erfahrene Anwender als auch für unerfahrene Benutzer konzipiert sein \citep[vgl.][]{Nielsen1995}.
-    \item Die Dialoge in einem System sollten immer nur wichtige Informationen anzeigen \citep[vgl.][]{Nielsen1995}.
-    \item Fehlermeldungen sollten immer in verständlichen Inhalten für den Anwender dargestellt werden und mögliche Lösungswege vorschlagen \citep[vgl.][]{Nielsen1995}.
-    \item Das System sollte eine ausreichende System- und Anwenderdokumentation besitzen. Außerdem sollten Informationen einfach in den Dokumentationen zu finden sein \citep[vgl.][]{Nielsen1995}.
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{5pt}
+    \setlength{\parsep}{3pt}
+    \item Das System sollte dem Anwender immer wieder den aktuellen Status mitteilen.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Die Sprache und Ausdrucksweise des Systems sollte zu dem des Anwenders passen. Dazu zählt auch, dass Informationen in realen und logischen Reihenfolgen dargestellt werden.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Der Anwender sollte die Möglichkeit haben Aktionen zu widerrufen und erneut auszuführen. Bei kritischen Aktionen sollte erst nach einer Bestätigung der Status eines Dialoges gewechselt werden.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Die Konventionen für Syntax und Semantik sollten systemweit einheitlich eingehalten werden.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Das System sollte so konzipiert sein, dass es keine Fehlermeldungen zulässt.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Wichtige Informationen sollten jederzeit im System einsehbar sein. Hilfen zur Handhabung des Systems sollten leicht zugänglich sein.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Das System sollte sowohl für erfahrene Anwender als auch für unerfahrene Benutzer konzipiert sein.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Die Dialoge in einem System sollten immer nur wichtige Informationen anzeigen.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Fehlermeldungen sollten immer in verständlichen Inhalten für den Anwender dargestellt werden und mögliche Lösungswege vorschlagen.\footnote{\cite[vgl.][]{Nielsen1995}}
+    \item Das System sollte eine ausreichende System- und Anwenderdokumentation besitzen. Außerdem sollten Informationen einfach in den Dokumentationen zu finden sein.\footnote{\cite[vgl.][]{Nielsen1995}}
 \end{itemize}
 
 Um eine all umfassendere Sicht auf mögliche Strategien und Ziele bei der Entwicklung, Analyse und Konzeption von ergonomischen Benutzerschnittstellen zu bekommen, bieten die Ansätze von Dr. Jakob Nielsen eine gute Ergänzung bzw. Erweiterung der Thematik. Eine weitere Auswahl an Usability Heuristiken stellte Ben Shneidermann mit seinen \enquote{8 Golden Rules of Interface Design}\footnote{\cite{Wong2018}} auf. Einige der dort genannten Aspekte decken sich mit den Inhalten der 10 Heuristiken von Dr. Jakob Nielsen.
@@ -150,7 +155,7 @@ Um eine all umfassendere Sicht auf mögliche Strategien und Ziele bei der Entwic
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Nutzen von Software-Ergonomie}
-Oftmals ist Unternehmen die Wichtigkeit der Software-Ergonomie zwar bewusst, jedoch schrecken sie zurück, wenn zusätzliche Aufwände im Entwicklungsprozess aufgebracht werden müssen. Diese Kosten und Aufwände erscheinen, verglichen zum erzielten Mehrwert, oftmals für den ersten Moment zu hoch. Langfristig gesehen wird sich jedoch die Software-Ergonomie positiv auf die Produktivität auswirken. Sobald es darum geht Arbeitsabläufe zu optimieren und Zeit zu sparen sind ergonomische Softwaresysteme unabdinglich. Ein gutes Beispiel für die Produktivitätssteigerung durch Software-Ergonomie ist das Service Dialog Center (Call-Center), in dem die Mitarbeiter teilweise durchgehend mit den Software Systemen ihres Unternehmens konfrontiert sind und dessen Produktivität unter anderem davon abhängt, wie benutzerfreundlich bzw. ergonomisch die Software auf sie zugeschnitten ist. Dort können schon jeweils wenige Sekunden Ersparnis im Arbeitsablauf eines einzelnen Mitarbeiters, einen großen Mehrwert insgesamt erzielen.\footnote{\cite[vgl.][19]{Pruemper_Harten2007}}
+Oftmals ist Unternehmen die Wichtigkeit der Software-Ergonomie zwar bewusst, jedoch schrecken sie zurück, wenn zusätzliche Aufwände im Entwicklungsprozess aufgebracht werden müssen. Diese Kosten und Aufwände erscheinen, verglichen zum erzielten Mehrwert, oftmals für den ersten Moment zu hoch. Langfristig gesehen wird sich jedoch die Software-Ergonomie positiv auf die Produktivität auswirken. Sobald es darum geht Arbeitsabläufe zu optimieren und Zeit zu sparen sind ergonomische Softwaresysteme unabdinglich. Bezogen auf den vorliegenden Anwendungsfall bedeutet dies, dass die Produktivität und Effizienz der Sachbearbeiter unter anderem von dem Eingabedialog, mit dem zwangsweise gearbeitet werden muss, abhängt. Durch eine verbesserte Benutzerfreundlichkeit bzw. Ergonomie der \gls{GUI}, können Produktivität und Effizienz positiv beeinflusst werden. Schon wenige Sekunden Ersparnis im Arbeitsablauf eines einzelnen Sachbearbeiters, bringen einen großen Mehrwert insgesamt.\footnote{\cite[vgl.][19]{Pruemper_Harten2007}}
 
 Die Produktivität setzt auch voraus, dass die Mitarbeiter keinen zu großen Belastungen (physisch und psychisch) ausgesetzt sind. Das heißt sowohl repetitive\footnote{repetitiv = sich wiederholend} Bewegungen der Finger, Hände, Arme und Schultern als auch der Arbeitsablauf und die Arbeitsorganisation sollten möglichst gering bzw. einfach gehalten werden. Zu hohe psychische Belastungen können daraus resultieren, dass zum Beispiel Zeitdruck, ein hoher Konzentrationsaufwand oder zu viele Unterbrechungen in den Arbeitsabläufen auftritt. Diese negativen Effekte gilt es durch eine ergonomische Software möglichst effektiv abzufangen und vorzubeugen.\footnote{\cite[vgl.][19]{Pruemper_Harten2007}}
 
@@ -174,11 +179,11 @@ Bei der Art der Evaluation lässt sich zwischen der formativen Evaluation und de
 
 \textbf{Formative Evaluation}
 
-Bei der formativen Evaluation versucht man mit entsprechenden Methoden möglichst früh im Entwicklungsprozess anzusetzen, um eine hohe Software Qualität und damit auch Ergonomie zu erzielen. Frühzeitige Benutzerbeteiligung und Prototyping helfen dabei die Bedürfnisse der Anwender in der Software abbilden zu können. Die formative Evaluation erhebt sowohl quantitative als auch qualitative Daten. Dabei werden die quantitativen dazu genutzt die Zielerfüllung zu überprüfen. Die qualitativen Daten hingegen werden zur Ableitung von Schwächen und Verbesserungsvorschlägen verwendet. Sie kommen überwiegend in der formativen Evaluation zum Einsatz.\footnote{\cite[vgl.][7]{Hegner2003}}
+Bei der formativen Evaluation wird mit entsprechenden Methoden möglichst früh versucht im Entwicklungsprozess anzusetzen, um eine hohe Software Qualität und damit auch Ergonomie zu erzielen. Frühzeitige Benutzerbeteiligung und Prototyping helfen dabei die Bedürfnisse der Anwender in der Software abbilden zu können. Die formative Evaluation erhebt sowohl quantitative als auch qualitative Daten. Dabei werden die quantitativen dazu genutzt die Zielerfüllung zu überprüfen. Die qualitativen Daten hingegen werden zur Ableitung von Schwächen und Verbesserungsvorschlägen verwendet. Sie kommen überwiegend in der formativen Evaluation zum Einsatz.\footnote{\cite[vgl.][7]{Hegner2003}}
 
 \textbf{Summative Evaluation}
 
-Zum anderen gibt es die summative Evaluation, die darauf ausgerichtet ist Software miteinander zu vergleichen oder Hypothesen und Erwartungen zu überprüfen. Dazu könnte eine Software zum Beispiel an gewissen Kriterien gemessen werden, die zu Anfang aufgestellt wurden. Die Verfahren zur Erhebung von empirischen Daten stammen überwiegend aus dem quantitativen Bereich, wie zum Beispiel die Befragungsmethode des Fragebogens (siehe Kap. \ref{sec:erhebungsmethoden}).\footnote{\cite[vgl.][8]{Hegner2003}}
+Die summative Evaluation ist darauf ausgerichtet Software miteinander zu vergleichen oder Hypothesen und Erwartungen zu überprüfen. Dazu könnte eine Software zum Beispiel an gewissen Kriterien gemessen werden, die zu Anfang aufgestellt wurden. Die Verfahren zur Erhebung von empirischen Daten stammen überwiegend aus dem quantitativen Bereich, wie zum Beispiel die Befragungsmethode des Fragebogens (siehe Kap. \ref{sec:erhebungsmethoden}).\footnote{\cite[vgl.][8]{Hegner2003}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -194,28 +199,27 @@ Bei den objektiven Methoden ist es das Ziel, \enquote{harte} Daten zu erheben un
 
 Subjektive Methoden versuchen möglichst nah bei den Eindrücken und Erfahrungen der Benutzern anzusetzen. Dabei werden Meinungen und Einschätzungen der Benutzer eingeholt, um den zu evaluierenden Gegenstand zu bewerten. Die erhobenen Daten zählen zu den \enquote{weichen} Daten. Die subjektiven Methoden sind in ihrer Durchführung mit eher geringem Aufwand verbunden, jedoch kann die nachfolgende Auswertung, bei umfangreichen Antworten, sehr zeitintensiv sein.\footnote{\cite[vgl.][18]{Hegner2003}}
 
-Man kann sagen, dass beide Arten von Methoden ihre Vor- und Nachteile besitzen, daher ist es oftmals sinnvoll die Methodiken miteinander zu kombinieren. Dadurch werden Schwächen mancher Methoden durch Stärken anderer ausgeglichen\footnote{\cite[vgl.][261]{Pruemper1997}}. In der Abbildung \ref{fig:erhebungsmethodenObjektivitaetBenutzerbeteiligung} wird noch einmal verdeutlicht welche Erhebungsmethoden es gibt und wie diese im Kontext der Objektivität bzw. Subjektivität und der dazu stehenden Benutzerbeteiligung einzuordnen sind.
+Man kann sagen, dass beide Arten von Methoden ihre Vor- und Nachteile besitzen, daher ist es oftmals sinnvoll die Methodiken miteinander zu kombinieren. Dadurch werden Schwächen mancher Methoden durch Stärken anderer ausgeglichen\footnote{\cite[vgl.][261]{Pruemper1997}}. In der Abbildung \ref{fig:erhebungsmethodenObjektivitaetBenutzerbeteiligung} wird noch einmal verdeutlicht, welche Erhebungsmethoden existieren und wie diese im Kontext der Objektivität bzw. Subjektivität und der dazu stehenden Benutzerbeteiligung einzuordnen sind.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.8]{img/Datenerhebungsmethoden_Objektivitaet_Benutzerbeteiligung.png}
-  \caption{Vergleich von Erhebungsmethoden aufgrund des Grades der Benutzerbeteiligung und der Objektivität der Methode in Anlehnung an \citep[vgl.][16]{Hegner2003}}
-  \caption*{\textbf{Quelle:} Eigene Darstellung}
+  \caption{Vergleich von Erhebungsmethoden aufgrund des Grades der Benutzerbeteiligung und der Objektivität der Methode.}
+  \caption*{\textbf{Quelle:} Eigene Darstellung \citep[vgl.][16]{Hegner2003}}
   \label{fig:erhebungsmethodenObjektivitaetBenutzerbeteiligung}
 \end{figure}
 Man kann sehen, dass sich die Methoden teilweise nicht genau einer Kategorie zuordnen lassen. Daher wurden zwischen der Subjektivität und der Objektivität noch die Formen der analytischen (leitfadenorientierten) und der empirischen Evaluation eingeführt\footnote{\cite[vgl.][15]{Hegner2003}}.
 
-Im folgenden werden explizit nur die Erhebungsmethoden vorgestellt und eingeordnet, die im Zuge meiner Ausarbeitung zum Einsatz kamen.
+Im folgenden werden explizit nur die Erhebungsmethoden vorgestellt und eingeordnet, die im Zuge dieser Ausarbeitung zum Einsatz kamen.
 
-\pagebreak
 \textbf{Logfile-Erhebung}
 
-Eine Methode zur Erhebung objektiver Daten ist die Logfile-Erhebung. Bei der Methode werden die Daten automatisch durch ein Erfassungssystem erhoben. Interaktionen die Benutzer mit dem System erzeugen werden vollständig aufgezeichnet. Beispielsweise werden Zeiten zwischen Interaktionen oder die Häufigkeit von Maus- und Tastaturanschlägen gemessen\footnote{\cite[vgl.][63]{Hegner2003}}. Diese Methode der Erhebung bietet eine effiziente und kostengünstige Aufzeichnung von Beobachtungsdaten\footnote{\cite[vgl.][Kap. 65.3]{Baur2014}}. Da die Logfile-Erhebung keine Kontextinformationen erfasst und rein objektive Daten wie z.B. Maus- oder Tastaturanschläge aufzeichnet, bietet sich eine Kombination mit einer Befragungsmethode wie z.B. dem Fragebogen an\footnote{\cite[vgl.][17\psq]{Hegner2003}}.
+Eine Methode zur Erhebung objektiver Daten ist die Logfile-Erhebung. Bei der Methode werden die Daten automatisch durch ein Erfassungssystem erhoben. Interaktionen, die Benutzer mit dem System erzeugen, werden vollständig aufgezeichnet. Beispielsweise werden Zeiten zwischen Interaktionen oder die Häufigkeit von Maus- und Tastaturanschlägen gemessen\footnote{\cite[vgl.][63]{Hegner2003}}. Diese Methode der Erhebung bietet eine effiziente und kostengünstige Aufzeichnung von Beobachtungsdaten\footnote{\cite[vgl.][Kap. 65.3]{Baur2014}}. Da die Logfile-Erhebung keine Kontextinformationen erfasst und rein objektive Daten wie z.B. Maus- oder Tastaturanschläge aufzeichnet, bietet sich eine Kombination mit einer Befragungsmethode wie z.B. dem Fragebogen an\footnote{\cite[vgl.][17\psq]{Hegner2003}}.
 
 \textbf{Fragebogen}
 
 Eine subjektive jedoch in Teilen auch objektive Methode ist der standardisierte Fragebogen. Hierbei werden von den Benutzern Meinungen, Erfahrungen und Einschätzungen zum untersuchenden Evaluationsgegenstand eingeholt. Das Ergebnis eines Fragebogens kann durch eine Häufigkeitsauswertung von freien und vorgegebenen Antworten ermittelt werden. Je freier eine Frage beantwortet werden darf, umso vielfältiger wird das Antwortenspektrum. Auf der anderen Seite sinkt bei steigender Freiheit die Bereitschaft der Befragten zu antworten und bestenfalls auch konstruktiv zu antworten. Im Bereich der Usability gibt es mehrere standardisierte Fragebögen wie den Questionnarie for User Interaction Satisfaction (QUIS), den IsoMetrics oder den Isonorm 9241/10 Fragebogen, welcher nachfolgend genauer vorgestellt wird.\footnote{\cite[vgl.][Kap. 4.5.1.1]{Hegner2003}}
 
-Der aus dem deutschsprachigen Raum stammende Isonorm 9241/10 Fragebogen, wurde wie auch der IsoMetrics Fragebogen, basierend auf der EN ISO 9241-110 entwickelt. Sein Fragenkatalog unterteilt sich in sieben Kriterien, die äquivalent zu den Gestaltungsgrundsätzen der EN ISO 9241-10 sind. Mit fünf Items pro Kriterium besitzt der Fragebogen insgesamt 35 Items. Jedes der Aussagen wird auf einer 7-stelligen Ratingskala (siehe Abb. \ref{fig:IsonormBewertungsskala}) bewertet, die von sehr negativ (\enquote{$---$}) bis sehr positiv (\enquote{$+++$}) reicht\footnote{\cite[vgl.][Kap. 3.3]{Figl2010}}. 
+Der aus dem deutschsprachigen Raum stammende Isonorm 9241/10 Fragebogen, wurde wie auch der IsoMetrics Fragebogen, basierend auf der EN ISO 9241-110 entwickelt. Sein Fragenkatalog unterteilt sich in sieben Kriterien, die äquivalent zu den Gestaltungsgrundsätzen der EN ISO 9241-10 sind. Mit fünf Items pro Kriterium besitzt der Fragebogen insgesamt 35 Items. Jede der Aussagen wird auf einer 7-stelligen Rating-Skala (siehe Abb. \ref{fig:IsonormBewertungsskala}) bewertet, die von sehr negativ (\enquote{$---$}) bis sehr positiv (\enquote{$+++$}) reicht\footnote{\cite[vgl.][Kap. 3.3]{Figl2010}}. 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.95]{img/Isonorm_Bewertungsskala.PNG}
@@ -233,13 +237,34 @@ Zu den qualitativen Erhebungsmethoden in der empirischen Sozialforschung zählen
 
 \subsubsection{Gütekriterien für Erhebungsmethoden}
 
-Die Güte oder auch Qualität einer Erhebungsmethode wird anhand der drei Hauptgütekriterien Objektivität, Validität und Reliabilität bewertet. Darüber hinaus gibt es auch noch weitere Nebengütekriterien (z.B. Normierung, Ökonomie oder Nützlichkeit)\footnote{\cite[vgl.][Kap. 3.5]{Figl2010}} auf die im Folgenden jedoch nicht genauer eingegangen werden soll.
+Die Güte oder auch Qualität einer Erhebungsmethode wird anhand der drei Hauptgütekriterien Objektivität, Validität und Reliabilität bewertet. Darüber hinaus gibt es auch noch weitere Nebengütekriterien (z.B. Normierung, Ökonomie oder Nützlichkeit)\footnote{\cite[vgl.][Kap. 3.5]{Figl2010}} auf die im Folgenden jedoch nicht genauer eingegangen werden wird.
 
-Die Objektivität sagt aus, ob ein Testergebnis unabhängig von der Testperson ist. Bedeutet das verschiedene Personen, die gleichen Testergebnisse erzielen\footnote{\cite[vgl.][Kap. 1]{Himme2007}}. Dieses Kriterium wird, im Fall des Isonorm Fragebogens, durch die standardisiert vorgegebenen Antwortmöglichkeiten und die Auswertungsvorschriften für die Ergebnisse gewährleistet\footnote{\cite[vgl.][Kap. 3.5.1]{Figl2010}}.
+Die Objektivität sagt aus, ob ein Testergebnis unabhängig von der Testperson ist. Bedeutet, dass verschiedene Personen, die gleichen Testergebnisse erzielen\footnote{\cite[vgl.][Kap. 1]{Himme2007}}. Dieses Kriterium wird, im Fall des Isonorm Fragebogens, durch die standardisiert vorgegebenen Antwortmöglichkeiten und die Auswertungsvorschriften für die Ergebnisse gewährleistet\footnote{\cite[vgl.][Kap. 3.5.1]{Figl2010}}.
 
 Die Validität gibt an, inwiefern ein Messinstrument gültig ist bzw. die benötigte Genauigkeit besitzt. Es wird überprüft, ob das Gemessene, dem entspricht, was gemessen werden soll\footnote{\cite[vgl][Kap. 1]{Himme2007}}. Dabei lässt sich bei der Validität zwischen Inhalts-, Kriteriums und Konstruktvalidität unterscheiden. In allen drei Bereichen zeigt der Isonorm Fragebogen eine ausreichende Erfüllung der Anforderungen\footnote{\cite[vgl.][Kap. 3.5.2]{Figl2010}}.
 
 Als drittes Qualitätsmerkmal wird die Reliabilität herangezogen. Diese beschreibt die Zuverlässigkeit und Stabilität eines Messinstruments. Um eine hohe Zuverlässigkeit bei der Erhebung von Daten zu erreichen, müssen unter anderem gemessene Ergebnisse durch erneutes Messen reproduzierbar sein\footnote{\cite[vgl.][Kap. 1]{Himme2007}}. Der Isonorm Fragebogen weist sowohl eine gute innere Konsistenz als auch eine hohe Retest-Reliabilität auf\footnote{\cite[vgl.][Kap. 3.5.3]{Figl2010}}. Die Logfile-Erhebung weist, durch eine hohe Automatisierung, generell eine höhere Reliabilität als ein Fragebogen auf\footnote{\cite[vgl.][Kap. 65.3]{Baur2014}}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Grundbegriffe der Statistik}
+\textbf{Grundgesamtheit und Stichprobe}
+
+Immer wenn es in der Statistik um die Analyse von Daten geht, bei denen die Menge von Bedeutung sind, fallen in diesem Zusammenhang Begriffe wie Grundgesamtheit oder Stichprobe. Die Grundgesamtheit hängt von der betrachteten Einheit ab, über die statistische Aussagen getroffen werden sollen und beschreibt die mögliche Menge dieser Einheit\footnote{\cite[vgl.][13]{Statistik2016}}.
+
+Da die Einbeziehung der Gesamtheit typischerweise nicht möglich ist, wird die Erhebung bzw. Analyse auf gewisse Kriterien und somit auf einen Teil der Grundgesamtheit eingeschränkt. In dem Fall wird von einer Teilgesamtheit oder Stichprobe gesprochen\footnote{\cite[vgl.][13]{Statistik2016}}.
+
+\textbf{Statistische Einheit, Merkmal und Merkmalsausprägung}
+
+Wird erneut das Beispiel mit der Schule und den Schülern betrachtet, dann ist die statistische Einheit in diesem Kontext ein einzelner Schüler. Sollte zum Beispiel die Anzahl der Fenster in der Schule ermitteln werden, dann ist die zu untersuchende statistische Einheit beziehungsweise der Merkmalsträger das Fenster.\footnote{\cite[vgl.][13]{Statistik2016}}
+
+Die Eigenschaften einer Einheit wird Merkmal genannt. Mögliche Merkmale, die bei einer Analyse von Schülern untersucht werden können sind Körpergröße, Augenfarbe, Haarfarbe oder Geschlecht. Merkmale können verschiedene Merkmalsausprägungen annehmen. Es kann zwischen qualitativen und quantitativen Ausprägungen unterschieden werden. Beispielsweise ist die Körpergröße ein Merkmal mit quantitativen Ausprägungen, in dem Fall sind alle natürlichen Zahlen größer null möglich. Eine qualitatives Merkmal hingegen ist beispielsweise das Geschlecht, das nur zwei Ausprägungen annehmen kann entweder Mann oder Frau.\footnote{\cite[vgl.][13\psqq]{Statistik2016}}
+
+Grundlegend wird bei Merkmalen und ihren Ausprägungen zwischen drei verschiedenen Skalen zum Messen der Merkmale und ihren Ausprägungen unterschieden. Die Nominalskala stellt das niedrigste Skalenniveau der drei Skalen dar und wird zur Klassifizierung und Darstellung von qualitativen Merkmalsausprägungen verwendet. Merkmale, die dieser Skala angehören, können lediglich gezählt und in der Häufigkeit ihrer Ausprägungen dargestellt werden.\footnote{\cite[vgl.][15\psqq]{Statistik2016}}
+
+Das nächst höhere Skalenniveau wird durch die Ordinalskala abgebildet. Beispielsweise gehören Schulnoten (Ausprägungen: sehr gut, gut, befriedigend, ausreichend, mangelhaft und ungenügend) zur Ordinalskala, die neben den Anwendungsgebieten der Nominalskala auch zum Vergleichen von Ausprägungen genutzt werden kann.\footnote{\cite[vgl.][15\psqq]{Statistik2016}}
+
+Die Intervallskala besitzt nicht nur das höchste Skalenniveau, sondern ist auch am vielfältigsten bei der Berechnung von Lageparametern. Diese werden im nächsten Abschnitt genauer erläutert. Die Intervallskala kann neben dem Vergleichen von Merkmalsausprägungen, auch einen numerischen Unterschied zwischen zwei Ausprägungen ermitteln.\footnote{\cite[vgl.][15\psqq]{Statistik2016}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -250,7 +275,7 @@ Usability-Engineering ist ein Vorgehen, das mit Hilfe eines Vorgehensmodell und 
 
 Agile Vorgehensmodelle, wie zum Beispiel das Spiralmodell oder \gls{XP}, folgen einem iterativen Ansatz. Im Entwicklungsprozess bedeutet das, dass mehrmals gleiche Phasen bzw. Tätigkeiten durchlaufen werden können und keine vordefinierte Reihenfolge eingehalten werden muss\footnote{\cite[vgl.][29\psqq]{Brandt2008}}. Grundsätzlich werden beim Usability-Engineering das Umfeld (Nutzungskontext), die Arbeitsabläufe, geeignete Funktionalitäten und Konzepte zu den grafischen Benutzeroberflächen analysiert und erarbeitet. Dabei hat sich das Usability-Engineering zum Ziel gemacht, komplexe Strukturen zu vereinfachen und eine Lösung zu entwerfen, die genau auf die Anforderungen der Benutzergruppe angepasst ist\footnote{\cite[vgl.][7]{Richter2013}}. Somit bietet sich das Vorgehen gut bei der Entwicklung von grafischen Benutzeroberflächen an, da die Benutzer mit ihren Rückmeldungen ein fester Bestandteil der Entwicklungsphase sind.
 
-Die EN ISO 9241-210 hat das Usability-Engineering als Standardvorgehen bei der Entwicklung von ergonomischer Software etabliert. Das Modell besitzt einen hohen Abstraktionsgrad und lässt sich daher für verschiedene Projekttypen einsetzten\footnote{\cite[vgl.][21]{Ecker2016}}. In der folgenden Abbildung \ref{fig:usabilityEngineeringVorgehensmodell} werden die vier Hauptphasen des Usability-Engineerings nach ISO 9241-210 dargestellt und nachfolgend erläutert.
+Die EN ISO 9241-210 hat das Usability-Engineering als Standardvorgehen bei der Entwicklung von ergonomischer Software etabliert. Das Modell besitzt einen hohen Abstraktionsgrad und lässt sich daher für verschiedene Projekttypen einsetzen\footnote{\cite[vgl.][21]{Ecker2016}}. In der Abbildung \ref{fig:usabilityEngineeringVorgehensmodell} werden die vier Hauptphasen des Usability-Engineerings nach ISO 9241-210 dargestellt und nachfolgend erläutert.
 \begin{figure}[H]
   \centering
   \fbox{\includegraphics[scale=1]{img/Usability_Engineering_Vorgehensmodell.png}}
@@ -261,7 +286,7 @@ Die EN ISO 9241-210 hat das Usability-Engineering als Standardvorgehen bei der E
 \begin{enumerate}
     \item In der ersten Phase des Software Projektes geht es darum, den Nutzungskontext (siehe Kap. 4.4.2) möglichst voll umfassend zu verstehen und zu beschreiben. Zum Nutzungskontext gehören die betroffenen Benutzergruppen mit deren Tätigkeiten und Arbeitsabläufen und die Arbeitsumgebung selbst. Die benötigten Informationen lassen sich mit Hilfe von Erhebungsmethoden (siehe Kap. 4.3.3) wie z.B. Fragebögen oder persönlichen Interviews eruieren\footnote{\cite[vgl.][28\psq]{Ecker2016}}.
     \item In der zweiten Phase des Modells werden die Anforderungen der betroffenen Benutzergruppen analysiert und dokumentiert. Dazu gehört, dass sich der Projektleiter mit den Benutzern und deren Sichtweise auseinander setzt und die Anforderungen zusammen erarbeitet werden\footnote{\cite[vgl.][30\psq]{Ecker2016}}.
-    \item Im dritten Prozessschritt werden die definierten Anforderungen in Form von Prototypen oder Mock-ups\footnote{Ein Mock-up ist eine oftmals zu präsentationszwecken grafisch modellierte Attrappe eines Produkts.} ausgearbeitet. In der Phase werden Entwürfe sowohl von der Ablaufsteuerung als auch vom Oberflächendesign erstellt. Die Ablaufsteuerung beinhaltet die wechselseitige Interaktion zwischen Benutzer und Software. Diese Abläufe werden in geeignete Schnittstellen oder Prozessdiagramme abgebildet. Der zweite Teil der Entwicklung besteht aus dem Entwurf der Schnittstelle. Dazu gehört, dass die Interaktionsart (Maus, Tastatur, etc.) mit der Schnittstelle festgelegt wird und dem entsprechend geeignete Bedienelemente ausgewählt und ergonomisch angeordnet werden\footnote{\cite[vgl.][33\psq]{Ecker2016}}.
+    \item Im dritten Prozessschritt werden die definierten Anforderungen in Form von Prototypen oder Mock-ups\footnote{Ein Mock-up ist eine oftmals zu präsentationszwecken grafisch modellierte Attrappe eines Produkts.} ausgearbeitet. In der Phase werden Entwürfe sowohl von der Ablaufsteuerung als auch vom Oberflächendesign erstellt. Die Ablaufsteuerung beinhaltet die wechselseitige Interaktion zwischen Benutzer und Software. Diese Abläufe werden in geeignete Schnittstellen oder Prozessdiagramme abgebildet. Der zweite Teil der Entwicklung besteht aus dem Entwurf der \gls{GUI}. Dazu gehört, dass die Interaktionsart (Maus, Tastatur, etc.) mit der Schnittstelle festgelegt wird und dementsprechend geeignete Bedienelemente ausgewählt und ergonomisch angeordnet werden\footnote{\cite[vgl.][33\psq]{Ecker2016}}.
     \item Im vierten Schritt werden die Gestaltungslösungen aus dem vorherigen Schritt evaluiert. Die Benutzer bewerten die entworfenen Mock-ups, Skizzen oder die fertig implementierte Schnittstelle, um Mängel oder Fehler frühzeitig zu erkennen. Für die Bewertung der Gestaltungslösungen sind Benutzungstests, Fragebögen oder Fokusgruppen\footnote{Eine Art der Gruppendiskussion, bei der moderierte und leitfadenorientierte Fragen diskutiert werden.} mögliche Herangehensweisen. Sollte keiner der Gestaltungslösungen die Nutzungsanforderungen ausreichend erfüllen, so können iterativ vorherige Phasen durchlaufen werden\footnote{\cite[vgl.][34\psq]{Ecker2016}}. Hingegen kann der Entwicklungsprozess bei befriedigender Lösung beendet und die finale Gestaltungslösung ausgerollt werden.
 \end{enumerate}
 
@@ -280,7 +305,7 @@ Der Nutzungskontext muss im Zuge der zweiten Phase aus dem Vorgehensmodell nach 
 
 \textbf{Benutzergruppen}
 
-Einen Teil der Kontextanalyse beinhaltet die Erhebung von Merkmale der Benutzer. Zu den Merkmalen, die durchaus einen Einfluss auf die Entwicklung des interaktiven Systems nehmen können, gehören Kenntnisse, Fertigkeiten, Erfahrungen, Ausbildung, Übungsgrad, physische Merkmale und motorische und sensorische Fähigkeiten\footnote{\cite[vgl.][28]{Ecker2016}}. Die unterschiedlichen Ausprägungen der Benutzer (insofern diese gegeben sind), sollten ebenso mit in den Entwicklungsprozess einfließen.
+Einen Teil der Kontextanalyse beinhaltet die Erhebung von Merkmalen der Benutzer. Zu den Merkmalen, die durchaus einen Einfluss auf die Entwicklung des interaktiven Systems nehmen können, gehören Kenntnisse, Fertigkeiten, Erfahrungen, Ausbildung, Übungsgrad, physische Merkmale sowie motorische und sensorische Fähigkeiten\footnote{\cite[vgl.][28]{Ecker2016}}. Die unterschiedlichen Ausprägungen der Benutzer (insofern diese gegeben sind) sollten ebenso mit in den Entwicklungsprozess einfließen.
 
 \textbf{Arbeitsabläufe}
 
@@ -291,88 +316,3 @@ Ebenso spielen für den Entwurf der Benutzerschnittstelle die Ausprägungen der 
 Zu Erhebung des technischen Umfelds, lässt sich generell zwischen der Software und der Hardware unterscheiden. Die Software manifestiert sich zum Beispiel im Betriebssystem der Benutzer, dass durchaus Unterschiede aufweisen kann. Hingegen werden zur Hardware jegliche Hilfsmittel am Arbeitsplatz wie Monitore, Drucker oder Taschenrechner gezählt und aufgenommen.\footnote{\cite[vgl.][28]{Ecker2016}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Statistische Datenanalyse}
-Damit für spätere Auswertungen und Analysen der erhobenen Daten die benutzten Methoden mit denen Daten normalisiert, statistisch bewertet und für grafische Darstellungen aufbereitet werden, klar und verständlich sind werden im Folgenden die Grundbegriffe und weiterreichende Methoden der Statistik, die im Rahmen der Thesis zum Einsatz kommen, vorgestellt und erklärt.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Bereiche der Statistik}
-In der Statistik unterscheidet man zwischen drei grundlegenden Aufgabengebieten. Zum einen die deskriptive Statistik, die es sich zur Aufgabe macht Daten komprimiert entweder beschreibend oder grafisch aufzubereiten. Diese Art der Aufbereitung wird häufig zu repräsentativen Zwecken eingesetzt. Dabei kommen verschiedene Diagramme und Tabellen zum Einsatz, die dazu dienen zuvor berechnete Durchschnittsgrößen und Kennzahlen der Merkmale und ihrer Ausprägungen darzustellen. Ein zusätzlich wichtiger Aufgabenbereich der deskriptiven Statistik ist die Datenvalidierung. Durch die deskriptive Aufbereitung der Daten lassen sich Fehler leicht aufdecken und gegeben falls beheben. Somit wird der Aufwand für nachträgliche Korrekturen gemindert.\footnote{\cite[vgl.][10\psq]{Statistik2016}}
-
-Ein weiterer Teilbereich der Statistik ist die explorative Datenanalyse. Sie bietet Methoden mit denen sich Strukturen und Besonderheiten in den Daten aufdecken lassen. Das führt oft dazu, dass neue Hypothesen und Fragestellungen hinzu kommen. Daher wird das explorative Vorgehen immer dann verwendet, wenn die Ausgangslage bzw. Fragestellung noch nicht eindeutig ist. Die Exploration wird als Ergänzung zu der Deskription von Daten angesehen.\footnote{\cite[vgl.][11\psq]{Statistik2016}}
-
-Die induktive Statistik ergänzt den dritten Bereich der Statistik. Dort wird über die erhobenen Daten hinweg, mittels Wahrscheinlichkeitstheorie und stochastischer Methoden, Aussagen und Folgerungen geschlossen. Um aussagekräftige Ergebnisse in der Statistik zu erzielen, wird eine klar definierte und sorgfältig strukturierte Versuchsplanung für alle drei Teilgebiet benötigt.\footnote{\cite[vgl.][12]{Statistik2016}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Grundbegriffe}
-\textbf{Grundgesamtheit und Stichprobe}
-
-Immer wenn es in der Statistik um die Analyse von Daten geht, bei denen die Menge von Bedeutung sind, fallen in diesem Zusammenhang Begriffe wie Grundgesamtheit oder Stichprobe. Die Grundgesamtheit hängt von der betrachteten Einheit ab, über die statistische Aussagen getroffen werden sollen und beschreibt die mögliche Menge dieser Einheit\footnote{\cite[vgl.][13]{Statistik2016}}. Als Beispiel kann eine Schule genommen werden, auf die insgesamt 400 Schüler und Schülerinnen gehen, von denen 250 Jungen und der Rest Mädchen sind. Sollte man auswerten wollen wie viele Schüler Mädchen bzw. Jungen sind, dann besteht die vorliegenden Grundgesamtheit, auf der die statistische Betrachtung basiert, aus allen 400 Schüler und Schülerinnen der Schule.
-
-Da die Einbeziehung der Gesamtheit typischerweise nicht möglich ist, wird die Erhebung bzw. Analyse auf gewisse Kriterien und somit auf einen Teil der Grundgesamtheit eingeschränkt. In dem Fall wird von einer Teilgesamtheit oder Stichprobe gesprochen\footnote{\cite[vgl.][13]{Statistik2016}}. Bezogen auf das obige Beispiel, wäre eine mögliche Fragestellung: \enquote{Wie viele der Jungen kommen im Durchschnitt täglich zu spät zum Unterrichtsbeginn?}, so würde sich die untersuchende Stichprobe aus allen Jungen der Schule zusammensetzen.
-
-\textbf{Statistische Einheit, Merkmal und Merkmalsausprägung}
-
-Wird erneut das Beispiel mit der Schule und den Schülern betrachtet, dann ist die statistische Einheit in diesem Kontext ein einzelner Schüler. Sollte zum Beispiel die Anzahl der Fenster in der Schule ermitteln werden wollen, dann ist die zu untersuchende statistische Einheit beziehungsweise der Merkmalsträger das Fenster.\footnote{\cite[vgl.][13]{Statistik2016}}
-
-Die Eigenschaften einer Einheit wird Merkmal genannt. Mögliche Merkmale, die bei einer Analyse von Schülern untersucht werden können sind Körpergröße, Augenfarbe, Haarfarbe oder Geschlecht. Merkmale können verschiedene Merkmalsausprägungen annehmen. Es kann zwischen qualitativen und quantitativen Ausprägungen unterschieden werden. Beispielsweise ist die Körpergröße ein Merkmal mit quantitativen Ausprägungen, in dem Fall sind alle natürlichen Zahlen größer null möglich. Eine qualitatives Merkmal hingegen ist beispielsweise das Geschlecht, das nur zwei Ausprägungen annehmen kann entweder Mann oder Frau.\footnote{\cite[vgl.][13\psqq]{Statistik2016}}
-
-Grundlegend wird bei Merkmalen und ihren Ausprägungen zwischen drei verschiedenen Skalen zum Messen der Merkmale und ihren Ausprägungen unterschieden. Die Nominalskala stellt das niedrigste Skalenniveau der drei Skalen dar und wird zur Klassifizierung und Darstellung von qualitativen Merkmalsausprägungen verwendet. Merkmale, die dieser Skala angehören, können lediglich gezählt und in der Häufigkeit ihrer Ausprägungen dargestellt werden.\footnote{\cite[vgl.][15\psqq]{Statistik2016}}
-
-Das nächst höhere Skalenniveau wird durch die Ordinalskala abgebildet. Beispielsweise gehören Schulnoten (Ausprägungen: sehr gut, gut, befriedigend, ausreichend, mangelhaft und ungenügend) zur Ordinalskala, die neben den Anwendungsgebieten der Nominalskala auch zum Vergleichen von Ausprägungen genutzt werden kann.\footnote{\cite[vgl.][15\psqq]{Statistik2016}}
-
-Die Intervallskala besitzt nicht nur das höchste Skalenniveau, sondern ist auch am vielfältigsten bei der Berechnung von Lageparametern. Diese werden im nächsten Abschnitt genauer erläutert. Die Intervallskala kann neben dem Vergleichen von Merkmalsausprägungen, auch einen numerischen Unterschied zwischen zwei Ausprägungen ermitteln.\footnote{\cite[vgl.][15\psqq]{Statistik2016}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Lageparameter}
-Lageparameter werden in der deskriptiven Statistik zum Beschreiben eines Mittelpunktes innerhalb einer Verteilung\footnote{Die Verteilung steht für die relative bzw. absolute Häufigkeit von Merkmalsausprägungen.} genutzt\footnote{\cite[vgl.][49]{Statistik2016}}. Im folgenden wird auf die als Lageparameter zählenden Größen Modus, Median und arithmetisches Mittel genauer eingegangen.
-
-Als ersten Lageparameter betrachten wir den Modus, der angibt welche Merkmalsausprägung in einer Verteilung am häufigsten vorkommt\footnote{\cite[vgl.][53]{Statistik2016}}. Als Beispiel nehmen wir eine Befragung bei der eine Stichprobe von 500 Probanden nach ihrer Lieblingsjahreszeit befragt werden. Das Ergebnis der Erhebung ist:
-\begin{center}
-\begin{tabular}{r|c|c|c|c} 
-\textbf{Jahreszeit} & Frühling & Sommer & Herbst & Winter \\ \hline
-\textbf{Anzahl Probanden} & 110 & 205 & 85 & 110\\
-\end{tabular}
-\end{center}
-Um anschließend den Modus zu bestimmen, wird das Merkmal mit den meisten Merkmalsausprägungen gesucht. In diesem Fall ist das mit 205 der Sommer.
-
-Im nächsten Schritt wollen wir anhand eines Beispiels den Median berechnen. Da der Median nur auf Ordinalskalen oder Intervallskalen angewandt werden kann, ist das vorherige Beispiel nicht für den Median geeignet\footnote{\cite[vgl.][52]{Statistik2016}}. Das vorliegende Beispiel ist lediglich nominal skaliert.
-Um ein Beispiel für den Median zu finden, betrachten wir das Alter von 10 zufällig ausgewählten Probanden, die im ersten Semester Biologie studieren. Die Stichprobe sieht wie folgt aus:
-\begin{center}
-\begin{tabular}{r|c|c|c|c|c|c|c|c|c|c} 
-\textbf{Rang} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
-\textbf{Alter} & 20 & 20 & 22 & 23 & 23 & 23 & 25 & 25 & 25 & 26\\
-\end{tabular}
-\end{center}
-Wie sich aus der Tabelle ablesen lässt gibt es 2 x 20, 1 x 21, 3 x 23, 3 x 25 und 1 x 26 als Alter der befragten Probanden. Zur Bestimmung des Medians werden die erhobenen Daten nach ihrer Größe geordnet (ist in der obigen Grafik schon geschehen). Danach wird der mittlere Wert in der Reihe ermittelt\footnote{\cite[vgl.][52\psq]{Statistik2016}}. In diesem Beispiel gibt es zwei mittlere Werte, da die Anzahl $N$ der befragten Probanden gerade ist. Bei geraden Stichprobenumfängen werden die beiden mittleren Merkmalsausprägungen addiert und anschließend durch zwei dividiert, um den Median zu erhalten\footnote{\cite[vgl.][53]{Statistik2016}}. Die konkrete Rechnung dazu sieht folgendermaßen aus: $Median = \frac{23 + 23}{2} = 23$.
-
-Der letzte Lageparameter, der immer dann angewendet werden kann wenn eine Intervallskala vorliegt, ist das arithmetische Mittel. Das arithmetische Mittel, auch bekannt als Mittelwert, gibt den Durchschnittlichen Wert aus einer Datenmenge mit $N$ Merkmalsausprägungen an. Der Mittelwert $\bar{x}$ ergibt sich aus der Summe aller Merkmalsausprägungen geteilt durch die Anzahl $N$ Werte\footnote{\cite[vgl.][49\psq]{Statistik2016}}. Für das obige Beispiel, wird der Mittelwert wie folgt berechnet: \\
-$Mittelwert = \frac{\sum \limits_{i=1}^N X_i}{N} = \frac{20\,+\,20\,+\,22\,+\,23\,+\,23\,+\,23\,+\,25\,+\,25\,+\,25\,+\,26}{10} = 23,2 Jahre$. Die Berechnung hat ergeben, dass die Erstsemester Biologie Studenten im Schnitt 23,2 Jahre alt sind.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Dispersionsparameter}
-Die nächste Sektion beschäftigt sich mit den Dispersionsparametern. Diese werden verwendet, wenn es darum geht ein Maß für die Streuung von Messwerten, um ein Zentrum zu ermitteln. Zu den bekanntesten Dispersionsparametern gehören unter anderem die Spannweite, die Varianz und die Standardabweichung.
-
-\textbf{Spannweite}
-
-Die Spannweite ist die Differenz zwischen dem größten (Maximum) und dem kleinsten (Minimum) Wert einer Messreihe. Dazu wird das Minimum vom Maximum subtrahiert\footnote{\cite[vgl.][62]{Statistik2016}}. Die Spannweite liefert einen schnellen Überblick über die Bandbreite der Werte\footnote{\cite[vgl.][38]{Kronthaler2016}}. Dazu eine Beispielrechnung mit der zuletzt aufgestellten Messreihe: $Spannweite = 26 - 20 = 6$. Auf den Kontext bezogen bedeutet das Ergebnis, dass der Altersunterschied zwischen dem jüngsten und dem ältesten Student der Untersuchung 6 Jahre beträgt.
-
-\textbf{Varianz}
-
-Wenn es in der Datenauswertung darum geht herauszufinden, wie weit die Messwerte durchschnittlich von dem arithmetischen Mittel abweichen, wird die Varianz berechnet. Die Varianz ist ein Maß für die Streuung von Messwerten um den Mittelwert. Für die Varianz wird in der empirischen Sozialforschung und auch für die nachfolgenden Rechnungen der Platzhalter $s^2$ verwendet. Die Berechnung startet damit, dass die quadrierten Abweichungen der einzelnen Messwerte, vom Mittelwert, aufsummiert werden. Anschließend wird die Summe durch die Anzahl der Messwerte dividiert. In der induktiven Statistik wird es bei größeren Datenmengen bevorzugt die Summe anschließend durch $n-1$ Werte zu dividieren\footnote{\cite[vgl.][65]{Statistik2016}}. Das Quadrat der Abweichung wird aus dem Grund verwendet, dass negative und positive Abweichungen, die aus der Differenz von $Messwert\:x$ und $Mittelwert\:\bar{x} $ entstehen, sich nicht gegenseitig aufheben und das Ergebnis verfälschen\footnote{\cite[vgl.][65]{Statistik2016}}. Die entsprechende Rechnung zum obigen Beispiel: \\
-$s^2 = \frac{1}{n - 1} \sum \limits_{i=1}^n (x_i\,-\,\bar{x})^2 = \frac{1}{9}[ (20\,-\,23,3)\:+\:(20\,-\,23,2)\:+\:...\:+\:(26\,-\,23,2)]= 4,4$. 
-
-Das Ergebnis von 4,4 ist nun ein Maß, das die Streuung um den Mittelpunkt angibt. Da für das Endergebnis alle Abweichungen zuerst quadriert wurden, besitzt das Ergebnis durch sein Quadrat eine andere Maßeinheit als die einzelnen Abweichungen\footnote{\cite[vgl.][65]{Statistik2016}}.
-
-\textbf{Standardabweichung}
-
-Um dem Problem, der geänderten Maßeinheit, aus dem Weg zu gehen, gibt es die Standardabweichung $s$, die häufiger in der Statistik eingesetzt wird. Im Gegensatz zu der Varianz wird für das Endergebnis der Standardabweichung, die ermittelte Summe aller quadrierten Abweichungen mit der Quadratwurzel bereinigt. Durch diesen Schritt besitzt das Ergebnis die gleiche Maßeinheit, wie die einzelnen Abweichungen\footnote{\cite[vgl.][65]{Statistik2016}}. Bedeutet im Klartext, dass die Berechnung der Standardabweichung der der Varianz bis auf die Quadratwurzel am Ende gleicht. Somit berechnet sich $s$ für das Beispiel aus der Wurzel von $s^2$. Die Rechnung dazu sieht wie folgt aus: $s = \sqrt{s^2} = \sqrt{4,4} = 2,1$. Interessant wird dieser Parameter, wenn z.B. Intervalle in Zusammenhang mit dem arithmetischen Mitteln angeben werden sollen. Es ist darauf zu achten, dass eine Normalverteilung vorliegt\footnote{\cite[vgl.][67]{Statistik2016}}. Im Folgenden wird dies anhand der Messreihe zu den Erstsemester Biologie Studenten verdeutlicht. Die Intervallen sehen folgendermaßen aus:
-\begin{compactitem}
-    \item in $\bar{x} \pm s^2$ liegen ca. 70\% aller Daten,
-    \item in $\bar{x} \pm 2s^2$ liegen 100\% aller Daten. 
-\end{compactitem}
-Sollte man Intervalle innerhalb einer nicht normalverteilten Verteilung angeben wollen, eignen sich Box-Plots besser\footnote{\cite[vgl.][67]{Statistik2016}}.
